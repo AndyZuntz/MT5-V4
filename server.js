@@ -10,10 +10,10 @@ const app = express(),
   http = require("http"),
   server = http.createServer(app);
 
-// config
-  var PORT = '8081',
+// Config
+var PORT = process.env.PORT,
 TRACKS_PATH = './client/multitrack/',
-addrIP = '127.0.0.1';
+addrIP = process.env.IP;
 
 
 if (PORT == 8009) {
