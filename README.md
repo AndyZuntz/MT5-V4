@@ -1,3 +1,5 @@
+Not the AZ readme -- this is the github readme
+
 MT5 - A multitrack HTML5 Player
 ===========
 Online demo at http://mainline.i3s.unice.fr, give a look also at the user's [manual and documentation](http://miageprojet2.unice.fr/Intranet_de_Michel_Buffa/MT5%2c_multitrack_player_for_musicians).
