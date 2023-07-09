@@ -10,10 +10,17 @@ const app = express(),
   http = require("http"),
   server = http.createServer(app);
 
-// Config
-var PORT = process.env.PORT,
+// Config for Heroku version 
+//var PORT = process.env.PORT,
+// TRACKS_PATH = './client/multitrack/',
+//addrIP = process.env.IP;
+
+// AZ to run on local server use
+// change port and IP, for example, use something like:
+// Config for local version 
+var PORT = '8081',
 TRACKS_PATH = './client/multitrack/',
-addrIP = process.env.IP;
+addrIP = '127.0.0.1';
 
 
 if (PORT == 8009) {
