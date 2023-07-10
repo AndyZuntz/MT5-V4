@@ -6,7 +6,7 @@ body {
 #app {
     width: 980px;
     margin: auto;
-    background: #EEE;
+    background: #333;
 }
 
 #console {
@@ -42,7 +42,7 @@ body {
     height: 200px;
     width: 680px;
     text-align: center;
-    background: #EEE;
+    background: #f26c6c99;
     border: 1px solid grey;
     z-index: 10;
 }
