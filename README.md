@@ -51,7 +51,7 @@ Ctrl-c to stop it
 
 Use  GitHub desktop to commit any changes you want to keep locally
 
-To commit them upon to Github web (where I will be able to access them , 
+To commit them upon to Github web (where I will be able to access them , use PUSH ORIGIN on the GitHub Desktop….
 
 
 
