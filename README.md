@@ -4,6 +4,57 @@ MT5 - A multitrack HTML5 Player
 V5.1 AZ/CR Amending the Look of it now that it is working. 
 
 
+Setting up
+
+Set up git CLI
+To install Git use:  
+https://git-scm.com/download/win
+
+Once the command output has completed, you can verify the installation by typing: 
+git version 
+
+Set up GitHub desktop
+
+https://desktop.github.com
+
+Install Node.js
+
+https://nodejs.org/en/downloadv
+
+Working on the app
+
+Then Check node version:
+Node -v
+
+Working on the app
+
+Create new subdirectory eg MT5v2 and open CLI
+Navigate with cd to new subdirectory 
+Open GitHub on Web
+Go to MT5-V4 
+Clone it to the new subdirectory.
+Use Github Desktop to move to css-experiments branch 
+
+Edit and Play with it 
+
+To run it  go to the subdirectory and run
+
+Npm install 
+
+This installs the modules you need 
+
+Then run:  node server.js
+
+It should show the player in  http://localhost:8081
+
+Ctrl-c to stop it
+
+Use  GitHub desktop to commit any changes you want to keep locally
+
+To commit them upon to Github web (where I will be able to access them , 
+
+
+
 
 ===========
 Online demo at http://mainline.i3s.unice.fr, give a look also at the user's [manual and documentation](http://miageprojet2.unice.fr/Intranet_de_Michel_Buffa/MT5%2c_multitrack_player_for_musicians).
