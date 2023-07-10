@@ -496,7 +496,7 @@ function animateTime() {
             }
         }
     } else {
-        showWelcomeMessage();
+//         showWelcomeMessage();
     }
     requestAnimFrame(animateTime);
 }
