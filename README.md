@@ -1,4 +1,4 @@
-MT5 - A multitrack HTML5 Player
+npm installMT5 - A multitrack HTML5 Player
 
 
 V5.1 AZ/CR Amending the Look of it now that it is working. 

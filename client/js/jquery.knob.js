@@ -100,11 +100,11 @@
           this.$.data('thickness') && Math.max(Math.min(this.$.data('thickness'), 1), 0.01)
         ) || 0.35,
         lineCap: this.$.data('linecap') || 'butt',
-        width: this.$.data('width') || 200,
+        width: this.$.data('width') || 100,
         height: this.$.data('height') || 200,
         displayInput: this.$.data('displayinput') === null || this.$.data('displayinput'),
         displayPrevious: this.$.data('displayprevious'),
-        fgColor: this.$.data('fgcolor') || '#87CEEB',
+        fgColor: this.$.data('fgcolor') || '#ED9B82',
         inputColor: this.$.data('inputcolor'),
         font: this.$.data('font') || 'Arial',
         fontWeight: this.$.data('font-weight') || 'bold',

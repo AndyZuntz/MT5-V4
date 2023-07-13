@@ -9,11 +9,13 @@ function addRangeListeners() {
   });
 
   // see: http://stackoverflow.com/a/18389801/1148249
+
+  // carl edit: line 18 black is coloured gradient edit
   $('body').on("input", 'input[type="range"]', function () {
     var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min')) * 100;
     console.log("val = " + val);
 
-    var cssProp = 'linear-gradient(to right  , lightGreen, blue ' + val + '%, red)';
+    var cssProp = 'linear-gradient(to right  , black, black ' + val + '%, black)';
     console.log(cssProp);
 
     $(this).css('background-image', cssProp)
