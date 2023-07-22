@@ -179,8 +179,9 @@ body {
     -webkit-appearance: none !important;
     border-radius: 5px;
     -webkit-box-shadow: inset 0 0 5px #333;
-    background-image: linear-gradient(to right, lightGreen, blue 100%, orange);
-    transition: background 450ms;
+/*     AZ Change colours  */
+    background-image: linear-gradient(to right, #c46a4d,#ffffff);
+/*     transition: background 450ms; */
 }
 
 /* Change the Slider Button Color Here */
@@ -188,7 +189,8 @@ body {
 .custom::-webkit-slider-thumb {
     -webkit-appearance: none !important;
     background: #AAA;
-    background-image: linear-gradient(to bottom, #EEE, #AAA);
+    /*     AZ Change colours  */
+    background-image: linear-gradient(to bottom,  #c46a4d,#ffffff);
     border: 1px solid #999;
     height: 30px;
     width: 30px;
@@ -197,7 +199,8 @@ body {
 
 .custom::-moz-range-thumb {
     background: #AAA;
-    background-image: linear-gradient(to bottom, #EEE, #AAA);
+    /*     AZ Change colours  */
+    background-image: linear-gradient(to bottom, #c46a4d,#ffffff);
     border: 1px solid #999;
     height: 30px;
     width: 30px;
