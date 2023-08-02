@@ -179,7 +179,7 @@ body {
     -webkit-appearance: none !important;
     border-radius: 5px;
     -webkit-box-shadow: inset 0 0 5px #333;
-/*     AZ Change colours  */
+/*     AZ Change Volume Control Slider colours  */
     background-image: linear-gradient(to right, black 70%, white);
 /*     transition: background 450ms; */
 }
@@ -189,18 +189,19 @@ body {
 .custom::-webkit-slider-thumb {
     -webkit-appearance: none !important;
     background: #AAA;
-    /*     AZ Change colours  */
-    background-image: linear-gradient(to bottom,  black, white );
+    /*     AZ Change Vol Button colours and size shape/radius*/
+    
+    background-image: linear-gradient(to bottom,  #3D4045, #3D4045 );
     border: 1px solid #999;
     height: 30px;
     width: 30px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .custom::-moz-range-thumb {
     background: #AAA;
-    /*     AZ Change colours  */
-    background-image: linear-gradient(to bottom, #c46a4d,#ffffff);
+    /*     AZ Change Vol Slider colours  */
+    background-image: linear-gradient(to bottom, #c46a4d,#c46a4d);
     border: 1px solid #999;
     height: 30px;
     width: 30px;
