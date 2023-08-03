@@ -236,7 +236,7 @@ function drawTrack(decodedBuffer, trackNumber) {
 
     var trackName = currentSong.tracks[trackNumber].name;
     //trackName = trackName.slice(trackName.lastIndexOf("/")+1, trackName.length-4);
-
+// AZ Change the colour of the waveform in the3 hex code below 
     waveformDrawer.init(decodedBuffer, View.masterCanvas, '#ed9b82');
     var x = 0;
     var y = trackNumber * SAMPLE_HEIGHT;
