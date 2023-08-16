@@ -11,16 +11,16 @@ const app = express(),
   server = http.createServer(app);
 
 // Config for Heroku/Render version 
-var PORT = process.env.PORT,
-TRACKS_PATH = './client/multitrack/',
-addrIP = process.env.IP;
+// var PORT = process.env.PORT,
+// TRACKS_PATH = './client/multitrack/',
+// addrIP = process.env.IP;
 
 // AZ to run on local server use
 // change port and IP, for example, use something like:
-// Config for local version 
-// var PORT = '8081',
-// TRACKS_PATH = './client/multitrack/',
-// addrIP = '127.0.0.1';
+Config for local version 
+var PORT = '8081',
+TRACKS_PATH = './client/multitrack/',
+addrIP = '127.0.0.1';
 
 
 if (PORT == 8009) {
