@@ -109,10 +109,10 @@ body {
     background: url(../img/down_arrow_select.jpg) no-repeat right #ddd;
     border: 1px solid #ccc;
 }
-
+/* AZ THe size of all buttons !! */
 button {
     height: 90px;
-    width: 120px;
+    width: 90px;
 }
 
 #sound {
