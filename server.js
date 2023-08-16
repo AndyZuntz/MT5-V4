@@ -17,7 +17,7 @@ const app = express(),
 
 // AZ to run on local server use
 // change port and IP, for example, use something like:
-Config for local version 
+// Config for local version 
 var PORT = '8081',
 TRACKS_PATH = './client/multitrack/',
 addrIP = '127.0.0.1';
