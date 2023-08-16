@@ -28,13 +28,15 @@
 	
 	<div id="app">
 	
-		<div id="console">
+	<!-- AZ We do not need the console 
+	<div id="console">
 		    <ul class="nav nav-tabs">
           <li ><a id="consoleTab" href="#home" data-toggle="tab">Console</a></li>
           <li><a id="waveTab" href="#profile" data-toggle="tab">Wave</a></li>
           <li><a class="active" href="#help" data-toggle="tab">Help</a></li>
         </ul>
             
+ -->
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane fade in " id="home">
@@ -42,7 +44,8 @@
           </div>
           <div class="tab-pane fade" id="profile">
               <canvas id="waveCanvas"></canvas>
-          </div>
+          <!-- AZ Not needed 
+</div>
             <div class="tab-pane fade in active" id="help">
                 <p>Version 1.0, <a href="http://miageprojet2.unice.fr/index.php?title=Intranet_de_Michel_Buffa/MT5%2C_multitrack_player_for_musicians"
                                         target="_blank">Documentation / Manual</a></p>
@@ -52,10 +55,11 @@
                 <p>Amine Hallili, HTML/CSS layout</p>             
             </div>
         </div>
+ -->
 	</div>	
 		<div id="masterTools">
 <!-- 		AZ this is the buttons div. no css. controlled from here Add new top = 70px -->
-		<div style="position : absolute;width : 1000px;top:170px">
+		<div style="position : absolute;width : 1000px;top:20px">
 <!-- 		AZ Remove Title 	
 <h2 style="text-align : center;">The Popwinds Multitrack Player</h2> -->
 			
@@ -68,7 +72,7 @@
 <!--                 AZ This is the master volume control area -->
     			<input id ="masterVolume" class="knob masterVolume" data-width="100" data-height="100" data-displayInput=false value="50">
 			</span>
-			
+<!-- 		AZ removed tr/td to make this into a single row 	 -->
 			<table style="margin-left: auto; margin-right: auto;">
 			    <tr><td>
 			        <button id="bplay" type="button" class="btn btn-default btn-lg" onclick="playAllTracks(0);" disabled>
@@ -85,30 +89,26 @@
                     <button id="bstop" onclick="addNewTrackForRecord();"  type="button" class="btn btn-default btn-lg" disabled>
                       <span class="glyphicon glyphicon-record"></span>
                     </button>
-                     <button id="brecordMix" onclick="toggleRecordMix();"type="button" class="btn btn-default btn-lg" style="font-size: 10px;
-padding: 0;" disabled>Record mix
+                     <button id="brecordMix" onclick="toggleRecordMix();"type="button" class="btn btn-default btn-lg" style="font-size: 10px; padding: 0;" disabled>Record mix
                     </button>
-			    </td></tr>
-			    <tr><td id="loopBox">
-			        <button id="loopStart" onclick="setLoopStart();" type="button" class="btn btn-default btn-lg" style="font-size: 10px;
-padding: 0;" disabled>
+<!-- 		AZ	    </td></tr> -->
+<!-- 		AZ	    <tr><td id="loopBox"> -->
+			        <button id="loopStart" onclick="setLoopStart();" type="button" class="btn btn-default btn-lg" style="font-size: 10px;  padding: 0;" disabled>
                       Start Loop
                     </button>
                     
-                    <button id="loopEnd"  onclick="setLoopEnd();" type="button" class="btn btn-default btn-lg" style="font-size: 10px;
-padding: 0;" disabled>
+                    <button id="loopEnd"  onclick="setLoopEnd();" type="button" class="btn btn-default btn-lg" style="font-size: 10px; padding: 0;" disabled>
                       End loop
                     </button>
                     
-                    <button id="loopReset"  onclick="resetSelection();" type="button" class="btn btn-default btn-lg" style="font-size: 10px;
-padding: 0;" disabled>
+                    <button id="loopReset"  onclick="resetSelection();" type="button" class="btn btn-default btn-lg" style="font-size: 10px; padding: 0;" disabled>
                       Reset loop
                     </button>
                     
                     <button onclick="loopOnOff();" id="loopOnOff" type="button" class="btn btn-default btn-lg" disabled>
                       <span class="glyphicon glyphicon-repeat"></span>
                     </button>
-			    </td></tr>
+<!-- 		AZ	    </td></tr> -->
 			    <tr><td>
 			        <div id="songs" class="styled-select"></div>
 			        <br/>
@@ -120,10 +120,8 @@ padding: 0;" disabled>
 		
 
 		<div id="scroll">
-    		<div id="trackControl">
-    			<table id="tracks">
-    				
-    			
+    		<div id="trackControl" > 
+    			<table id="tracks" padding = "200">
     			</table>
     		</div>
     		<div id="canvass">

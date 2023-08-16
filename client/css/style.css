@@ -93,16 +93,17 @@ body {
     background: #ddd;
     background: transparent;
     width: 240px;
-    padding: 5px;
+    padding: 35px;
     font-size: 16px;
     line-height: 1;
     border: 0;
-    border-radius: 0;
+    border-radius: 0px;
     height: 34px;
     -webkit-appearance: none;
 }
 
 .styled-select {
+	margin: 25px;
     width: 240px;
     height: 34px;
     overflow: hidden;
@@ -111,8 +112,8 @@ body {
 }
 /* AZ THe size of all buttons !! */
 button {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
 }
 
 #sound {
