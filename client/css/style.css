@@ -5,7 +5,7 @@ body {
 }
 
 #app {
-    width: 980px;
+    width: 1080px;
     margin: auto;
     background: blue;
 }
@@ -83,7 +83,7 @@ body {
 
 #scroll {
     position: absolute;
-/* AZ this is the wave player areaPushed it down to match #mastertool  */
+/* AZ this is the wave player area. Pushed it down to match #mastertool  */
     top: 301px;
     width: 980px;
     background: #EEE;
@@ -111,8 +111,8 @@ body {
 }
 /* AZ this where the Buttons are sized.  it affects them all */
 button {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
 }
 
 #sound {
@@ -149,9 +149,10 @@ a[data-toggle=tab] {
     height: 20px;
     margin-top: 22px;
 }
-
+/* AZ The master Volume knob. Styled to position it better */
 .knobDiv {
     float: right;
+    margin-left: -25;
 }
 
 .activated {
