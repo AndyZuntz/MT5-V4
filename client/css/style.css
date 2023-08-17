@@ -101,10 +101,12 @@ body {
     height: 34px;
     -webkit-appearance: none;
 }
-
+/* AZ this is the songlist dropdown.  I have moved it down and centred  */
 .styled-select {
     width: 240px;
     height: 34px;
+    margin-top:12px;
+    margin-left:250px;
     overflow: hidden;
     background: url(../img/down_arrow_select.jpg) no-repeat right #ddd;
     border: 1px solid #ccc;
