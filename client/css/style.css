@@ -5,7 +5,7 @@ body {
 }
 
 #app {
-    width: 980px;
+    width: 1080px;
     margin: auto;
     background: blue;
 }
@@ -83,7 +83,7 @@ body {
 
 #scroll {
     position: absolute;
-/* AZ this is the wave player areaPushed it down to match #mastertool  */
+/* AZ this is the wave player area. Pushed it down to match #mastertool  */
     top: 301px;
     width: 980px;
     background: #EEE;
@@ -101,18 +101,20 @@ body {
     height: 34px;
     -webkit-appearance: none;
 }
-
+/* AZ this is the songlist dropdown.  I have moved it down and centred  */
 .styled-select {
     width: 240px;
     height: 34px;
+    margin-top:12px;
+    margin-left:250px;
     overflow: hidden;
     background: url(../img/down_arrow_select.jpg) no-repeat right #ddd;
     border: 1px solid #ccc;
 }
-
+/* AZ this where the Buttons are sized.  it affects them all */
 button {
-    height: 42px;
-    width: 42px;
+    height: 75px;
+    width: 75px;
 }
 
 #sound {
@@ -147,11 +149,12 @@ a[data-toggle=tab] {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-1);
     margin-left: -30px;
     height: 20px;
-    margin-top: 22px;
+    margin-top: 12px;
 }
-
+/* AZ The master Volume knob. Styled to position it better */
 .knobDiv {
     float: right;
+    margin-left: -25;
 }
 
 .activated {
@@ -173,11 +176,12 @@ body {
 .touch {
     width: 40%;
 }
-
+/* This controls the style of the volume slider on each track */
 .custom {
-    width: 60%;
+    width: 45%;
     -webkit-appearance: none !important;
-    height: 15px;
+    height: 25px;
+    margin-left: 40px;
     border-radius: 8px;
     -webkit-appearance: none !important;
     border-radius: 5px;
