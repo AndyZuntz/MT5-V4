@@ -25,7 +25,8 @@ var selectionForLoop = {
 
 
 // Sample size in pixels
-var SAMPLE_HEIGHT = 75;
+// AZ Changed to 99 to match button sizes 
+var SAMPLE_HEIGHT = 99;
 
 // Useful for memorizing when we paused the song
 var lastTime = 0;

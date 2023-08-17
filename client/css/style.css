@@ -149,7 +149,7 @@ a[data-toggle=tab] {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-1);
     margin-left: -30px;
     height: 20px;
-    margin-top: 22px;
+    margin-top: 12px;
 }
 /* AZ The master Volume knob. Styled to position it better */
 .knobDiv {
@@ -176,11 +176,12 @@ body {
 .touch {
     width: 40%;
 }
-
+/* This controls the style of the volume slider on each track */
 .custom {
-    width: 60%;
+    width: 45%;
     -webkit-appearance: none !important;
-    height: 15px;
+    height: 25px;
+    margin-left: 40px;
     border-radius: 8px;
     -webkit-appearance: none !important;
     border-radius: 5px;
