@@ -70,7 +70,7 @@
 			</span>
 	<!-- 		AZ removed tr/td pairs below to make this into a single row 	 -->	
 <!-- 	AZ added margin-top 13 px to line it up with the Master vol knob! 	 -->
-			<table style="margin-left: auto; margin-right: auto; margin-top: 13px">
+			<table style="float: left; margin-left: auto; margin-right: auto; margin-top: 13px">
 			    <tr><td>
 			        <button id="bplay" type="button" class="btn btn-default btn-lg" onclick="playAllTracks(0);" disabled>
                       <span class="glyphicon glyphicon-play"></span>
@@ -89,10 +89,12 @@
                      <button id="brecordMix" onclick="toggleRecordMix();"type="button" class="btn btn-default btn-lg" style="font-size: 10px;
 padding: 0;" disabled>Record mix
                     </button>
-<!-- 
 			    </td></tr>
+			</table>
+<!-- 			    AZ try putting another table in  -->
+	<table style="float:left; margin-left: 10px; margin-right: auto; margin-top: 13px">
 			    <tr><td id="loopBox">
- -->
+
 			        <button id="loopStart" onclick="setLoopStart();" type="button" class="btn btn-default btn-lg" style="font-size: 10px;
 padding: 0;" disabled>
                       Start Loop
