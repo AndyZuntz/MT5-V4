@@ -1,13 +1,13 @@
 /* AZ The main background colors are in this area  */
 body {
-/*     margin: 0 3%; */
+    margin: 0 3%;
     background: #3D4045;
 }
 
 #app {
-    width: 1080px;
+    width: 960px;
     margin: auto;
-    background: red;
+    background: blue;
 }
 
 #console {
@@ -44,7 +44,7 @@ body {
     height: 300px;
     width: 100%;
     text-align: center;
-    background: blue;
+    background: #3D4045;
 /*     border: 1px solid grey; */
     z-index: 10;
 }
