@@ -65,8 +65,8 @@
     			<button id="bsound" onclick="masterMuteUnmute(this);" type="button" class="btn btn-default btn-lg master" style="margin-right: 28px;position: absolute;right: 0;margin-top: 28px;" hidden>
                   <span class="glyphicon glyphicon-volume-up"></span>
                 </button>
-<!--                 AZ This is the master volume area  -->
-    			<input id ="masterVolume" class="knob masterVolume" data-width="100" data-height="100" data-displayInput=false value="100">
+<!--                 AZ This is the master volume area. Really bad way of hiding it by reducing dimensions to Zero  -->
+    			<input id ="masterVolume" class="knob masterVolume" data-width="00" data-height="00" data-displayInput=false value="100" >
 			</span>
 	<!-- 		AZ removed tr/td pairs below to make this into a single row 	 -->	
 <!-- 	AZ added margin-top 1px to line it up with the Master vol knob! 	 -->
@@ -97,7 +97,8 @@ padding: 0;" disabled hidden>Record mix
 
 			        <button id="loopStart" onclick="setLoopStart();" type="button" class="btn btn-default btn-lg" style="font-size: 16px;
 padding: 0;" disabled>
-                      Start Loop
+<!--                         AZ Swapping Text for img text was "Start Loop" -->
+						<img src="img/AZ_square-red.png" >
                     </button>
                     
                     <button id="loopEnd"  onclick="setLoopEnd();" type="button" class="btn btn-default btn-lg" style="font-size: 16px;
