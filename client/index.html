@@ -72,52 +72,70 @@
 <!-- 	AZ added margin-top 1px to line it up with the Master vol knob! 	 -->
 			<table style="float: left; margin-left: 15%; margin-right: auto; margin-top: 1px">
 			    <tr><td>
+			       
+<!-- AZ Swapping glyphicon for CR PLAY Button -->               
 			        <button id="bplay" type="button" class="btn btn-default btn-lg" onclick="playAllTracks(0);" disabled>
-                      <span class="glyphicon glyphicon-play"></span>
+<!--                   <span class="glyphicon glyphicon-play"></span> -->
+								 <img src="img/CR_Play.png" >
                     </button>
                     
+<!-- AZ Swapping glyphicon for CR PAUSE Button -->               
                     <button id="bpause" onclick="pauseAllTracks();" disabled type="button" class="btn btn-default btn-lg">
-                      <span class="glyphicon glyphicon-pause"></span>
+<!--                       <span class="glyphicon glyphicon-pause"></span> -->
+							 <img src="img/CR_Pause.png" >
                     </button>
                     
+<!-- AZ Swapping glyphicon for CR STOP Button -->
                     <button id="bstop" onclick="stopAllTracks();"  type="button" class="btn btn-default btn-lg" disabled>
-                      <span class="glyphicon glyphicon-stop"></span>
+<!--                       <span class="glyphicon glyphicon-stop"></span> -->
+						 <img src="img/CR_Stop.png" >
                     </button>
+    
+                    <!--                     AZ Hidden the next   button that does not do anything anyway -->
                     <button id="bstop" onclick="addNewTrackForRecord();"  type="button" class="btn btn-default btn-lg" disabled hidden>
                       <span class="glyphicon glyphicon-record"></span>
                     </button>
+
+<!--                     AZ Hidden the record Mix button that does not do anything anyway -->
                      <button id="brecordMix" onclick="toggleRecordMix();"type="button" class="btn btn-default btn-lg" style="font-size: 10px;
 padding: 0;" disabled hidden>Record mix
                     </button>
 			    </td></tr>
 			</table>
-<!-- 			    AZ try putting another table in  -->
+			
+<!-- 			    AZ  put another table for the loop buttons in  -->
 	<table style="float:left; margin-left: 10px; margin-right: auto; margin-top: 1px">
 			    <tr><td id="loopBox">
 
 			        <button id="loopStart" onclick="setLoopStart();" type="button" class="btn btn-default btn-lg" style="font-size: 16px;
 padding: 0;" disabled>
-<!--                         AZ Swapping Text for img text was "Start Loop" -->
-						<img src="img/AZ_square-red.png" >
+
+<!--AZ Swapping Text for Carls img text was "Start Loop" -->
+						<img src="img/CR_Start_loop.png" >
                     </button>
                     
+<!--AZ Swapping Text for Carls img text was "END Loop" ~~> -->
                     <button id="loopEnd"  onclick="setLoopEnd();" type="button" class="btn btn-default btn-lg" style="font-size: 16px;
 padding: 0;" disabled>
-                      End  Loop
+                      <img src="img/CR_End_loop.png" >
                     </button>
                     
+<!-- AZ NOT Swapping Text for Carls img for  text "RESET Loop" as no button provided~~> -->
                     <button id="loopReset"  onclick="resetSelection();" type="button" class="btn btn-default btn-lg" style="font-size: 16px;
 padding: 0;" disabled>
                       Reset Loop
                     </button>
                     
+<!--AZ Swapped CR icon for text was PLAY LOOP   -->                    
                     <button onclick="loopOnOff();" id="loopOnOff" type="button" class="btn btn-default btn-lg" style="font-size: 16px; disabled>
-<!--                     AZ Swapped icon for text  -->
 <!--                       <span class="glyphicon glyphicon-repeat"></span> 
-                   Play Loop
+                   <img src="img/CR_Play_loop.png" >
                     </button>
+                    
 			    </td></tr>
 			    <tr><td>
+			    
+			    
 			        <div id="songs" class="styled-select"></div>
 			        <br/>
 			    </td></tr>
