@@ -61,20 +61,31 @@
 <!-- 		AZ Remove Title 	
 <h2 style="text-align : center;">The Popwinds Multitrack Player</h2> -->
 <!-- 	AZ here are the Volume and master Mute Buttons 	I have hidden the master Mute, record mix and addnew track buttons 	 -->
+
+
+
+<!-- 	THE MAIN ROW OF CONTROL BUTTONS  -->
+
+
 			<span id="volume">
     			<button id="bsound" onclick="masterMuteUnmute(this);" type="button" class="btn btn-default btn-lg master" style="margin-right: 28px;position: absolute;right: 0;margin-top: 28px;" hidden>
                   <span class="glyphicon glyphicon-volume-up"></span>
                 </button>
-<!--                 AZ This is the master volume area. Really bad way of hiding it by reducing dimensions to Zero  -->
+<!--AZ This is the master volume area. Really bad way of hiding it by reducing dimensions to Zero  -->
     			<input id ="masterVolume" class="knob masterVolume" data-width="00" data-height="00" data-displayInput=false value="100" >
 			</span>
-	<!-- 		AZ removed tr/td pairs below to make this into a single row 	 -->	
-<!-- 	AZ added margin-top 1px to line it up with the Master vol knob! 	 -->
-			<table style="float: left; margin-left: 15%; margin-right: auto; margin-top: 1px">
+
+
+<!-- AZ removed tr/td pairs below to make this into a single row 	 -->	
+
+<!-- AZ added margin-top 1px to line it up with the Master vol knob! 	 -->
+			<table style="float: left; margin-left: 15%; margin-right: auto;  margin-top: 1px">
 			    <tr><td>
+	
 			       
-<!-- AZ Swapping glyphicon for CR PLAY Button -->               
-			        <button id="bplay" type="button" class="btn btn-default btn-lg" onclick="playAllTracks(0);" disabled>
+<!-- AZ Swapping glyphicon for CR PLAY Button -->
+			        <button id="bplay" type="button"  class="btn btn-default btn-lg" onclick="playAllTracks(0);" disabled>
+			        <span style="background-color:blue !important"</span>
 <!--                   <span class="glyphicon glyphicon-play"></span> -->
 								 <img src="img/CR_Play.png" >
                     </button>

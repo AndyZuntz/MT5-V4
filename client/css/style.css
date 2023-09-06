@@ -113,9 +113,25 @@ body {
 }
 /* AZ this where the Buttons are sized.  it affects them all */
 button {
-    height: 100px;
-    width: 100px;
+    height: 47px;
+    width: 69px;
+    background-color : #989898!important;
+    margin :0px!important;
+    
 }
+/* Attempt to sort out buttons to match carl's icons 
+This should over-ride the bootstrap css */
+
+/* 
+.AZ_blue {background-color : blue}
+ */
+/* 
+.btn {background-color : blue}
+.btn-default {background-color : blue}
+.btn-lg {background-color : blue}
+ */
+
+
 
 /* AZ add a new class for the mute and solo  buttons on the track control - they have been assigned to the class but it did not exist */
 .mute {
