@@ -106,30 +106,101 @@ body {
     width: 240px;
     height: 34px;
     margin-top:12px;
-    margin-left:10px !important;
+    margin-left:-150px !important;
     overflow: hidden;
     background: url(../img/down_arrow_select.jpg) no-repeat right #ddd;
     border: 1px solid #ccc;
 }
 /* AZ this where the Buttons are sized.  it affects them all */
-button {
-    height: 47px;
-    width: 69px;
-    background-color : #989898!important;
-    margin :0px!important;
+ /* Attempt to sort out buttons to match carl's icons 
+This should over-ride the bootstrap css */  
     
+/* PLAY BUTTON */
+#bplay {
+    height: 46px;  
+    width: 69px;    
+    background-color : #abcdef !important;
+    background: url(../img/CR_Play.png) no-repeat  ;  
+    border-width : 0px !important;
+    border-color: grey !important;
+    border-style: solid;
+    border-radius: 5px;
 }
-/* Attempt to sort out buttons to match carl's icons 
-This should over-ride the bootstrap css */
+    
 
+/* PAUSE BUTTON */
+#bpause {
+    height: 46px;  
+    width: 69px;    
+    background-color : #abcdef !important;
+    background: url(../img/CR_Pause.png) no-repeat  ;  
+    border-width : 0px !important;
+    border-color: grey !important;
+    border-style: solid;
+    border-radius: 5px;
+}
+    
+/* STOP  BUTTON */
+#bstop {
+    height: 46px;  
+    width: 69px;    
+    background-color : #abcdef !important;
+    background: url(../img/CR_Stop.png) no-repeat  ;  
+    border-width : 0px !important;
+    border-color: grey !important;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+/* LOOP START BUTTON */
+#loopStart {
+    height: 38px;  
+    width: 57px;    
+    background-color : #abcdef !important;
+    background: url(../img/CR_Start_loop.png) no-repeat  ;  
+    border-width : 0px !important;
+    border-color: grey !important;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+/* LOOP END  BUTTON */
+#loopEnd {
+    height: 37px;  
+    width: 54px;    
+    background-color : #abcdef !important;
+    background: url(../img/CR_End_loop.png) no-repeat  ;  
+    border-width : 0px !important;
+    border-color: grey !important;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+/* RESET LOOP BUTTON  */
+#loopReset {
+    height: 37px;  
+    width: 54px;    
+    background-color : #abcdef !important;
 /* 
-.AZ_blue {background-color : blue}
+    background: url(../img/CR_Pause.png) no-repeat  ;  
  */
-/* 
-.btn {background-color : blue}
-.btn-default {background-color : blue}
-.btn-lg {background-color : blue}
- */
+    border-width : 0px !important;
+    border-color: grey !important;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+/* PLAY LOOP  BUTTON */
+#loopOnOff {
+    height: 37px;  
+    width: 55px;    
+    background-color : #abcdef !important;
+    background: url(../img/CR_Play_Loop.png) no-repeat  ;  
+    border-width : 0px !important;
+    border-color: grey !important;
+    border-style: solid;
+    border-radius: 5px;
+}
 
 
 

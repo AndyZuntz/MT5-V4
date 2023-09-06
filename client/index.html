@@ -83,23 +83,22 @@
 			    <tr><td>
 	
 			       
-<!-- AZ Swapping glyphicon for CR PLAY Button -->
-			        <button id="bplay" type="button"  class="btn btn-default btn-lg" onclick="playAllTracks(0);" disabled>
-			        <span style="background-color:blue !important"</span>
+<!-- AZ Swapping glyphicon for CR PLAY Button and removed this class: class="btn btn-default btn-lg"-->
+			        <button class="button_play " id="bplay" type="button"   onclick="playAllTracks(0);" disabled>
 <!--                   <span class="glyphicon glyphicon-play"></span> -->
-								 <img src="img/CR_Play.png" >
+<!-- 								 <img src="img/CR_Play.png" > -->
                     </button>
                     
-<!-- AZ Swapping glyphicon for CR PAUSE Button -->               
-                    <button id="bpause" onclick="pauseAllTracks();" disabled type="button" class="btn btn-default btn-lg">
+<!-- AZ Swapping glyphicon for CR PAUSE Buttonand removed this class: class="btn btn-default btn-lg" -->               
+                    <button id="bpause" onclick="pauseAllTracks();" disabled type="button" >
 <!--                       <span class="glyphicon glyphicon-pause"></span> -->
-							 <img src="img/CR_Pause.png" >
+<!-- 							 <img src="img/CR_Pause.png" > -->
                     </button>
                     
-<!-- AZ Swapping glyphicon for CR STOP Button -->
-                    <button id="bstop" onclick="stopAllTracks();"  type="button" class="btn btn-default btn-lg" disabled>
+<!-- AZ Swapping glyphicon for CR STOP Button and removed this class: class="btn btn-default btn-lg"-->
+                    <button id="bstop" onclick="stopAllTracks();"  type="button"  disabled>
 <!--                       <span class="glyphicon glyphicon-stop"></span> -->
-						 <img src="img/CR_Stop.png" >
+<!-- 						 <img src="img/CR_Stop.png" > -->
                     </button>
     
                     <!--                     AZ Hidden the next   button that does not do anything anyway -->
@@ -115,32 +114,32 @@ padding: 0;" disabled hidden>Record mix
 			</table>
 			
 <!-- 			    AZ  put another table for the loop buttons in  -->
-	<table style="float:left; margin-left: 10px; margin-right: auto; margin-top: 1px">
+	<table style="float:left; margin-left: 10px; margin-right: auto; margin-top: 5px">
 			    <tr><td id="loopBox">
 
 			        <button id="loopStart" onclick="setLoopStart();" type="button" class="btn btn-default btn-lg" style="font-size: 16px;
 padding: 0;" disabled>
 
 <!--AZ Swapping Text for Carls img text was "Start Loop" -->
-						<img src="img/CR_Start_loop.png" >
+<!-- 						<img src="img/CR_Start_loop.png" > -->
                     </button>
                     
 <!--AZ Swapping Text for Carls img text was "END Loop" ~~> -->
                     <button id="loopEnd"  onclick="setLoopEnd();" type="button" class="btn btn-default btn-lg" style="font-size: 16px;
 padding: 0;" disabled>
-                      <img src="img/CR_End_loop.png" >
+<!--                       <img src="img/CR_End_loop.png" > -->
                     </button>
                     
 <!-- AZ NOT Swapping Text for Carls img for  text "RESET Loop" as no button provided~~> -->
                     <button id="loopReset"  onclick="resetSelection();" type="button" class="btn btn-default btn-lg" style="font-size: 16px;
 padding: 0;" disabled>
-                      Reset Loop
+<!--                       Reset Loop -->
                     </button>
                     
 <!--AZ Swapped CR icon for text was PLAY LOOP   -->                    
                     <button onclick="loopOnOff();" id="loopOnOff" type="button" class="btn btn-default btn-lg" style="font-size: 16px; disabled>
 <!--                       <span class="glyphicon glyphicon-repeat"></span> 
-                   <img src="img/CR_Play_loop.png" >
+<!--                    <img src="img/CR_Play_loop.png" > -->
                     </button>
                     
 			    </td></tr>
