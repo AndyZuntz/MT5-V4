@@ -106,16 +106,71 @@ body {
     width: 240px;
     height: 34px;
     margin-top:12px;
-    margin-left:10px !important;
+    margin-left:-150px !important;
     overflow: hidden;
     background: url(../img/down_arrow_select.jpg) no-repeat right #ddd;
     border: 1px solid #ccc;
 }
 /* AZ this where the Buttons are sized.  it affects them all */
-button {
-    height: 100px;
-    width: 100px;
+ /* Attempt to sort out buttons to match carl's icons 
+This should over-ride the bootstrap css */  
+    
+/* ALL BUTTONS   */
+
+.AZ_All_Buttons{
+    height: 67px;  
+    width: 100px;  
+    background-size: 10%; 
+    background-color : #989898 !important;
+    border-width : 0px !important;
+    border-color: grey !important;
+    border-style: solid;
+    border-radius: 5px;
+}    
+    
+/* PLAY BUTTON */
+#bplay {
+      background: url(../img/CR_Play.png) no-repeat  ;  
+       background-size: cover; 
 }
+
+/* PAUSE BUTTON */
+#bpause {  
+    background: url(../img/CR_Pause.png) no-repeat  ;  
+    background-size: cover;  
+}
+    
+/* STOP  BUTTON */
+#bstop {    
+    background: url(../img/CR_Stop.png) no-repeat  ;  
+    background-size: cover; 
+}
+
+/* LOOP START BUTTON */
+#loopStart {  
+    background: url(../img/CR_Start_loop.png) no-repeat  ;   
+    background-size: cover;   
+}
+
+/* LOOP END  BUTTON */
+#loopEnd {
+    background: url(../img/CR_End_loop.png) no-repeat  ;  
+    background-size: cover; 
+   }
+
+/* RESET LOOP BUTTON  */
+#loopReset {  
+    background: url(../img/CR_cancel_loop.png) no-repeat  ;  
+    background-size: cover;    
+}
+
+/* PLAY LOOP  BUTTON */
+#loopOnOff {
+    background: url(../img/CR_Play_Loop.png) no-repeat  ; 
+    background-size: cover;     
+}
+
+
 
 /* AZ add a new class for the mute and solo  buttons on the track control - they have been assigned to the class but it did not exist */
 .mute {

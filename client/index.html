@@ -61,62 +61,78 @@
 <!-- 		AZ Remove Title 	
 <h2 style="text-align : center;">The Popwinds Multitrack Player</h2> -->
 <!-- 	AZ here are the Volume and master Mute Buttons 	I have hidden the master Mute, record mix and addnew track buttons 	 -->
+
+
+
+<!-- 	THE MAIN ROW OF CONTROL BUTTONS  -->
+
+<!-- THIS FIRST BUTTON IS HIDDEN BUT NEEDED -->
 			<span id="volume">
     			<button id="bsound" onclick="masterMuteUnmute(this);" type="button" class="btn btn-default btn-lg master" style="margin-right: 28px;position: absolute;right: 0;margin-top: 28px;" hidden>
                   <span class="glyphicon glyphicon-volume-up"></span>
                 </button>
-<!--                 AZ This is the master volume area  -->
-    			<input id ="masterVolume" class="knob masterVolume" data-width="100" data-height="100" data-displayInput=false value="100">
+<!--AZ This is the master volume area. Really bad way of hiding it by reducing dimensions to Zero  -->
+    			<input id ="masterVolume" class="knob masterVolume" data-width="00" data-height="00" data-displayInput=false value="100" >
 			</span>
-	<!-- 		AZ removed tr/td pairs below to make this into a single row 	 -->	
-<!-- 	AZ added margin-top 1px to line it up with the Master vol knob! 	 -->
-			<table style="float: left; margin-left: auto; margin-right: auto; margin-top: 1px">
+
+
+<!-- AZ removed tr/td pairs below to make this into a single row 	 -->	
+
+<!-- AZ added margin-top 1px to line it up with the Master vol knob! 	 -->
+			<table style="float: left; margin-left: 15%; margin-right: auto;  margin-top: 1px">
 			    <tr><td>
-			        <button id="bplay" type="button" class="btn btn-default btn-lg" onclick="playAllTracks(0);" disabled>
-                      <span class="glyphicon glyphicon-play"></span>
+			       
+<!-- AZ Swapping glyphicon for CR PLAY Button and removed this class: class="btn btn-default btn-lg"-->
+			        <button class="AZ_All_Buttons" id="bplay" type="button"   onclick="playAllTracks(0);" disabled>
                     </button>
                     
-                    <button id="bpause" onclick="pauseAllTracks();" disabled type="button" class="btn btn-default btn-lg">
-                      <span class="glyphicon glyphicon-pause"></span>
+<!-- AZ Swapping glyphicon for CR PAUSE Buttonand removed this class: class="btn btn-default btn-lg" -->               
+                    <button id="bpause" class="AZ_All_Buttons" onclick="pauseAllTracks();" disabled type="button" >
                     </button>
                     
-                    <button id="bstop" onclick="stopAllTracks();"  type="button" class="btn btn-default btn-lg" disabled>
-                      <span class="glyphicon glyphicon-stop"></span>
+<!-- AZ Swapping glyphicon for CR STOP Button and removed this class: class="btn btn-default btn-lg"-->
+                    <button id="bstop" class="AZ_All_Buttons" onclick="stopAllTracks();"  type="button"  disabled>
                     </button>
+    
+<!-- AZ Hidden the next   button that does not do anything anyway -->
                     <button id="bstop" onclick="addNewTrackForRecord();"  type="button" class="btn btn-default btn-lg" disabled hidden>
                       <span class="glyphicon glyphicon-record"></span>
                     </button>
+
+<!--AZ Hidden the record Mix button that does not do anything anyway -->
                      <button id="brecordMix" onclick="toggleRecordMix();"type="button" class="btn btn-default btn-lg" style="font-size: 10px;
 padding: 0;" disabled hidden>Record mix
                     </button>
 			    </td></tr>
 			</table>
-<!-- 			    AZ try putting another table in  -->
-	<table style="float:left; margin-left: 10px; margin-right: auto; margin-top: 1px">
+			
+<!--AZ  put another table for the loop buttons in  -->
+	<table style="float:left; margin-left: 50px; margin-right: auto; margin-top: 3px">
 			    <tr><td id="loopBox">
-
-			        <button id="loopStart" onclick="setLoopStart();" type="button" class="btn btn-default btn-lg" style="font-size: 16px;
+<!-- !~~AZ Swapping Text for Carls img text was "Start Loop" ~~> -->
+			        <button id="loopStart" class="AZ_All_Buttons" onclick="setLoopStart();" type="button"  style="font-size: 16px;
 padding: 0;" disabled>
-                      Start Loop
                     </button>
                     
-                    <button id="loopEnd"  onclick="setLoopEnd();" type="button" class="btn btn-default btn-lg" style="font-size: 16px;
+<!--AZ Swapping img for Carls img text was "END Loop" ~~> -->
+                    <button id="loopEnd" class="AZ_All_Buttons" onclick="setLoopEnd();" type="button"  style="font-size: 16px;
 padding: 0;" disabled>
-                      End  Loop
                     </button>
                     
-                    <button id="loopReset"  onclick="resetSelection();" type="button" class="btn btn-default btn-lg" style="font-size: 16px;
+<!-- AZ NOT Swapping img for Carls img for  text "RESET Loop" as no button provided~~> -->
+                    <button id="loopReset" class="AZ_All_Buttons" onclick="resetSelection();" type="button"  style="font-size: 16px;
 padding: 0;" disabled>
-                      Reset Loop
                     </button>
                     
-                    <button onclick="loopOnOff();" id="loopOnOff" type="button" class="btn btn-default btn-lg" style="font-size: 16px; disabled>
-<!--                     AZ Swapped icon for text  -->
+<!--AZ Swapped CR icon for text was PLAY LOOP   -->                    
+                    <button onclick="loopOnOff();" class="AZ_All_Buttons" id="loopOnOff" type="button"  style="font-size: 16px; disabled>
 <!--                       <span class="glyphicon glyphicon-repeat"></span> 
-                   Play Loop
                     </button>
+                    
 			    </td></tr>
 			    <tr><td>
+			    
+			    
 			        <div id="songs" class="styled-select"></div>
 			        <br/>
 			    </td></tr>
