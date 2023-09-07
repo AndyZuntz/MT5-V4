@@ -117,9 +117,9 @@ This should over-ride the bootstrap css */
     
 /* PLAY BUTTON */
 #bplay {
-    height: 46px;  
-    width: 69px;    
-    background-color : #abcdef !important;
+    height: 67px;  
+    width: 100px;    
+    background-color : #989898 !important;
     background: url(../img/CR_Play.png) no-repeat  ;  
     border-width : 0px !important;
     border-color: grey !important;
@@ -130,9 +130,9 @@ This should over-ride the bootstrap css */
 
 /* PAUSE BUTTON */
 #bpause {
-    height: 46px;  
-    width: 69px;    
-    background-color : #abcdef !important;
+    height: 67px;  
+    width: 100px;    
+    background-color : #989898 !important;
     background: url(../img/CR_Pause.png) no-repeat  ;  
     border-width : 0px !important;
     border-color: grey !important;
@@ -142,9 +142,9 @@ This should over-ride the bootstrap css */
     
 /* STOP  BUTTON */
 #bstop {
-    height: 46px;  
-    width: 69px;    
-    background-color : #abcdef !important;
+    height: 67px;  
+    width: 100px;    
+    background-color : #989898 !important;
     background: url(../img/CR_Stop.png) no-repeat  ;  
     border-width : 0px !important;
     border-color: grey !important;
@@ -154,9 +154,9 @@ This should over-ride the bootstrap css */
 
 /* LOOP START BUTTON */
 #loopStart {
-    height: 38px;  
-    width: 57px;    
-    background-color : #abcdef !important;
+    height: 51px;  
+    width: 77px;    
+    background-color : #989898 !important;
     background: url(../img/CR_Start_loop.png) no-repeat  ;  
     border-width : 0px !important;
     border-color: grey !important;
@@ -166,24 +166,22 @@ This should over-ride the bootstrap css */
 
 /* LOOP END  BUTTON */
 #loopEnd {
-    height: 37px;  
-    width: 54px;    
-    background-color : #abcdef !important;
+    height: 51px;  
+    width: 77px;     
+    background-color : #989898 !important;
     background: url(../img/CR_End_loop.png) no-repeat  ;  
-    border-width : 0px !important;
-    border-color: grey !important;
+    border-width : 1px !important;
+    border-color: #ffffff !important;
     border-style: solid;
     border-radius: 5px;
 }
 
 /* RESET LOOP BUTTON  */
 #loopReset {
-    height: 37px;  
-    width: 54px;    
-    background-color : #abcdef !important;
-/* 
-    background: url(../img/CR_Pause.png) no-repeat  ;  
- */
+    height: 51px;  
+    width: 77px;   
+    background-color : #989898 !important;
+    background: url(../img/CR_cancel_loop.png) no-repeat  ;  
     border-width : 0px !important;
     border-color: grey !important;
     border-style: solid;
@@ -192,9 +190,11 @@ This should over-ride the bootstrap css */
 
 /* PLAY LOOP  BUTTON */
 #loopOnOff {
-    height: 37px;  
-    width: 55px;    
-    background-color : #abcdef !important;
+    height: 51px;  
+    width: 77px;   
+/* 
+    background-color : #989898 !important;
+ */
     background: url(../img/CR_Play_Loop.png) no-repeat  ;  
     border-width : 0px !important;
     border-color: grey !important;
