@@ -115,91 +115,59 @@ body {
  /* Attempt to sort out buttons to match carl's icons 
 This should over-ride the bootstrap css */  
     
+/* ALL BUTTONS   */
+
+.AZ_All_Buttons{
+    height: 67px;  
+    width: 100px;  
+    background-size: 10%; 
+    background-color : #989898 !important;
+    border-width : 0px !important;
+    border-color: grey !important;
+    border-style: solid;
+    border-radius: 5px;
+}    
+    
 /* PLAY BUTTON */
 #bplay {
-    height: 67px;  
-    width: 100px;    
-    background-color : #989898 !important;
-    background: url(../img/CR_Play.png) no-repeat  ;  
-    border-width : 0px !important;
-    border-color: grey !important;
-    border-style: solid;
-    border-radius: 5px;
+      background: url(../img/CR_Play.png) no-repeat  ;  
+       background-size: cover; 
 }
-    
 
 /* PAUSE BUTTON */
-#bpause {
-    height: 67px;  
-    width: 100px;    
-    background-color : #989898 !important;
+#bpause {  
     background: url(../img/CR_Pause.png) no-repeat  ;  
-    border-width : 0px !important;
-    border-color: grey !important;
-    border-style: solid;
-    border-radius: 5px;
+    background-size: cover;  
 }
     
 /* STOP  BUTTON */
-#bstop {
-    height: 67px;  
-    width: 100px;    
-    background-color : #989898 !important;
+#bstop {    
     background: url(../img/CR_Stop.png) no-repeat  ;  
-    border-width : 0px !important;
-    border-color: grey !important;
-    border-style: solid;
-    border-radius: 5px;
+    background-size: cover; 
 }
 
 /* LOOP START BUTTON */
-#loopStart {
-    height: 51px;  
-    width: 77px;    
-    background-color : #989898 !important;
-    background: url(../img/CR_Start_loop.png) no-repeat  ;  
-    border-width : 0px !important;
-    border-color: grey !important;
-    border-style: solid;
-    border-radius: 5px;
+#loopStart {  
+    background: url(../img/CR_Start_loop.png) no-repeat  ;   
+    background-size: cover;   
 }
 
 /* LOOP END  BUTTON */
 #loopEnd {
-    height: 51px;  
-    width: 77px;     
-    background-color : #989898 !important;
     background: url(../img/CR_End_loop.png) no-repeat  ;  
-    border-width : 1px !important;
-    border-color: #ffffff !important;
-    border-style: solid;
-    border-radius: 5px;
-}
+    background-size: cover; 
+   }
 
 /* RESET LOOP BUTTON  */
-#loopReset {
-    height: 51px;  
-    width: 77px;   
-    background-color : #989898 !important;
+#loopReset {  
     background: url(../img/CR_cancel_loop.png) no-repeat  ;  
-    border-width : 0px !important;
-    border-color: grey !important;
-    border-style: solid;
-    border-radius: 5px;
+    background-size: cover;    
 }
 
 /* PLAY LOOP  BUTTON */
 #loopOnOff {
-    height: 51px;  
-    width: 77px;   
-/* 
-    background-color : #989898 !important;
- */
-    background: url(../img/CR_Play_Loop.png) no-repeat  ;  
-    border-width : 0px !important;
-    border-color: grey !important;
-    border-style: solid;
-    border-radius: 5px;
+    background: url(../img/CR_Play_Loop.png) no-repeat  ; 
+    background-size: cover;     
 }
 
 
