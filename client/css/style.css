@@ -170,8 +170,6 @@ This should over-ride the bootstrap css */
     background-size: cover;     
 }
 
-
-
 /* AZ add a new class for the mute and solo  buttons on the track control - they have been assigned to the class but it did not exist */
 .mute {
     height: 75px;
