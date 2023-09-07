@@ -83,15 +83,15 @@
 			    <tr><td>
 			       
 <!-- AZ Swapping glyphicon for CR PLAY Button and removed this class: class="btn btn-default btn-lg"-->
-			        <button class="AZ_All_Buttons" id="bplay" type="button"   onclick="playAllTracks(0);" disabled>
+			        <button class="AZ_All_Buttons_L" id="bplay" type="button"   onclick="playAllTracks(0);" disabled>
                     </button>
                     
 <!-- AZ Swapping glyphicon for CR PAUSE Buttonand removed this class: class="btn btn-default btn-lg" -->               
-                    <button id="bpause" class="AZ_All_Buttons" onclick="pauseAllTracks();" disabled type="button" >
+                    <button id="bpause" class="AZ_All_Buttons_L" onclick="pauseAllTracks();" disabled type="button" >
                     </button>
                     
 <!-- AZ Swapping glyphicon for CR STOP Button and removed this class: class="btn btn-default btn-lg"-->
-                    <button id="bstop" class="AZ_All_Buttons" onclick="stopAllTracks();"  type="button"  disabled>
+                    <button id="bstop" class="AZ_All_Buttons_L" onclick="stopAllTracks();"  type="button"  disabled>
                     </button>
     
 <!-- AZ Hidden the next   button that does not do anything anyway -->
@@ -104,42 +104,48 @@
 padding: 0;" disabled hidden>Record mix
                     </button>
 			    </td></tr>
+			
 			</table>
 			
 <!--AZ  put another table for the loop buttons in  -->
-	<table style="float:left; margin-left: 50px; margin-right: auto; margin-top: 3px">
+
+	<table style="float:left; margin-left: 35px; margin-right: auto; margin-top: 20px">
 			    <tr><td id="loopBox">
 <!-- !~~AZ Swapping Text for Carls img text was "Start Loop" ~~> -->
-			        <button id="loopStart" class="AZ_All_Buttons" onclick="setLoopStart();" type="button"  style="font-size: 16px;
+			        <button id="loopStart" class="AZ_All_Buttons_S" onclick="setLoopStart();" type="button"  style="font-size: 16px;
 padding: 0;" disabled>
                     </button>
                     
 <!--AZ Swapping img for Carls img text was "END Loop" ~~> -->
-                    <button id="loopEnd" class="AZ_All_Buttons" onclick="setLoopEnd();" type="button"  style="font-size: 16px;
+                    <button id="loopEnd" class="AZ_All_Buttons_S" onclick="setLoopEnd();" type="button"  style="font-size: 16px;
 padding: 0;" disabled>
                     </button>
                     
 <!-- AZ NOT Swapping img for Carls img for  text "RESET Loop" as no button provided~~> -->
-                    <button id="loopReset" class="AZ_All_Buttons" onclick="resetSelection();" type="button"  style="font-size: 16px;
+                    <button id="loopReset" class="AZ_All_Buttons_S" onclick="resetSelection();" type="button"  style="font-size: 16px;
 padding: 0;" disabled>
                     </button>
                     
 <!--AZ Swapped CR icon for text was PLAY LOOP   -->                    
-                    <button onclick="loopOnOff();" class="AZ_All_Buttons" id="loopOnOff" type="button"  style="font-size: 16px; disabled>
-<!--                       <span class="glyphicon glyphicon-repeat"></span> 
+                    <button onclick="loopOnOff();" class="AZ_All_Buttons_S" id="loopOnOff" type="button"  style="font-size: 16px; disabled>
+                      <span class="glyphicon glyphicon-repeat"></span> 
                     </button>
-                    
+
 			    </td></tr>
-			    <tr><td>
-			    
-			    
+			</table>   
+ </div>
+		  <div>	 
+	<!--AZ now the dropdown list for the songs chooser           -->		    
+			    <tr><td>			    
 			        <div id="songs" class="styled-select"></div>
+<!-- 
 			        <br/>
+ -->
 			    </td></tr>
-			</table>
-		</div>
-		</div>
+			
+		  </div> 
 		
+		</div>	
 		
 
 		<div id="scroll">
