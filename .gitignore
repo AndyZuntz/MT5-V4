@@ -1,3 +1,7 @@
+# AZ Additions from MacoS
+*.DS_Store
+
+
 # Logs
 logs
 *.log
