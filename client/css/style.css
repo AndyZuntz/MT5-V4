@@ -191,7 +191,7 @@ This should over-ride the bootstrap css */
 
 /* PLAY LOOP  BUTTON */
 #loopOnOff {
-    background: url(../img/CR_Play_Loop.png) no-repeat  ; 
+    background: url(../img/CR_Play_loop.png) no-repeat  ; 
     background-size: cover;     
 }
 
