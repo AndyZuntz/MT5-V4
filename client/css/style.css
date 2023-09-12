@@ -1,13 +1,15 @@
 /* AZ The main background colors are in this area  */
 body {
-    margin: 0 3%;
-    background: #3D4045;
+	margin 10px;
+    background: pink;
+/*     background: #3D4045; */
+     border: 3px dashed blue;
 }
 
 #app {
-    width: 1080px;
+    width: 100%;
     margin: auto;
-    background: blue;
+    background: red;
 }
 
 #console {
@@ -19,7 +21,7 @@ body {
     text-align: center;
     color: white;
     background: blue;
-    border: 1px solid grey;
+    border: 3px solid pink;
     z-index: 10;
 }
 
@@ -28,7 +30,9 @@ body {
     white-space: nowrap;
     overflow: auto;
     overflow-x: hidden;
-}
+    border: 10px dashed pink;
+/*     AZ temp hide */
+ visibility: hidden;}
 
 #messages {
     height: 160px;
@@ -38,24 +42,27 @@ body {
 }
 
 #masterTools {
-    position: fixed;
-    top: 0;
+/*     position: fixed; */
+/*     top: 0; */
 /*     AZ Changed Height to 300 */
     height: 300px;
-    width: 100%;
+    width: 75%;
     text-align: center;
     background: #3D4045;
-/*     border: 1px solid grey; */
+    border: 10px dashed green;
     z-index: 10;
 }
+
+#Large-Buttons
 
 #volume {
     height: 42px;
 }
 
-/* AZ this is the contyainer for the songs dropdown list  */
+/* AZ this is the container for the songs dropdown list  */
 
 #songs {
+/* 
     text-align: left;
     position: absolute;
     top: 150px;
@@ -63,6 +70,8 @@ body {
     width: 300px;
     height: 50px;
     background: #3D4045;
+ */
+    border: 10px solid pink;
 }
 
 #trackControl {
@@ -78,15 +87,16 @@ body {
 
 .trackBox {
     vertical-align: middle;
-    border: 1px solid grey;
+    border: 10px solid violet;
 }
 
 #canvass {
     margin-left: 380px;
+    border: 10px solid red;
 }
 
 #myCanvas {
-    background: #3D4045;
+    background: #ffffff;
 }
 
 #scroll {
@@ -115,7 +125,8 @@ body {
 }
 /* AZ this is the songlist dropdown.  I have moved it down and centred  */
 .styled-select select {
-    width: 100px;
+ /* 
+   width: 100px;
     height: 30px;
     margin-top:12px;
     margin-left:150px !important;
@@ -123,6 +134,7 @@ body {
     font-size: 28px;
       -webkit-appearance: none;   
     background: url(../img/down_arrow_select.jpg) no-repeat right #ddd;
+ */
 /*     border: 1px solid #ccc; */
 }
 /* AZ this where the Buttons are sized.  it affects them all */
