@@ -62,6 +62,8 @@ body {
 /* AZ this is the container for the songs dropdown list  */
 
 #songs {
+ display: flex;
+ align-items: center;
 /* 
     text-align: left;
     position: absolute;
@@ -108,35 +110,12 @@ body {
 }
 
 /* This is the dropdown for the song chooser  */
-/* AZ cutting out this one for now 
+
 .styled-select select {
-    background: #ddd;
-    background: transparent;
-    width: 240px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    font-size: 18px;
-    line-height: 1.5;
-    border: 0;
-    border-radius: 0;
-    height: 30px;
-    -webkit-appearance: none;
+ border: 3px dashed blue;
  */
 }
-/* AZ this is the songlist dropdown.  I have moved it down and centred  */
-.styled-select select {
- /* 
-   width: 100px;
-    height: 30px;
-    margin-top:12px;
-    margin-left:150px !important;
-    overflow: hidden; 
-    font-size: 28px;
-      -webkit-appearance: none;   
-    background: url(../img/down_arrow_select.jpg) no-repeat right #ddd;
- */
-/*     border: 1px solid #ccc; */
-}
+
 /* AZ this where the Buttons are sized.  it affects them all */
  /* Attempt to sort out buttons to match carl's icons 
 This should over-ride the bootstrap css */  
