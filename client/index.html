@@ -30,11 +30,11 @@
 <!-- 	Deleted Console and moved wavecanvas down 	 -->
 
 <!-- 	****** START Div called "masterTools" -->
-	<div id="masterTools">
+		<div id="masterTools">
 
 <!-- 	THE MAIN ROW OF CONTROL BUTTONS  -->
 
-<!-- THIS FIRST BUTTON IS HIDDEN BUT NEEDED -->
+<!-- THIS FIRST BUTTON IS HIDDEN BUT NEEDED BY THE CODE -->
 			<span id="volume">
     			<button id="bsound" onclick="masterMuteUnmute(this);" type="button" class="btn btn-default btn-lg master" style="margin-right: 28px;position: absolute;right: 0;margin-top: 28px;" hidden>
                 </button>
@@ -42,9 +42,8 @@
     			<input id ="masterVolume" class="knob masterVolume" data-width="00" data-height="00" data-displayInput=false value="100" >
 			</span>
 
-<!-- This is the Row of large Buttons Currently Formatted as a Table   -->	
-			<table id = "Large_Buttons" >
-			    <tr><td>
+<!-- This is a div for the top  Row of large Buttons     -->	
+			<div id = "Large_Buttons" >
 <!-- PLAY	   -->
 			    	<button class="AZ_All_Buttons_L" id="bplay" type="button"   onclick="playAllTracks(0);" disabled>  </button>
 <!-- PAUSE     -->
@@ -55,69 +54,51 @@
 <!-- and two  I have hidden as not needed by us but the app needs them      -->
                     <button id="bstop" onclick="addNewTrackForRecord();"  type="button" class="btn btn-default btn-lg" disabled hidden></button>
                      <button id="brecordMix" onclick="toggleRecordMix();"type="button" class="btn btn-default btn-lg" style="font-size: 10px; padding: 0;" disabled hidden>Record mix</button>
-                </td></tr>
-			</table>
-			
-<!-- Another table for the smaller loop buttons in  -->
-			<table id = "Small_Buttons">
-			    <tr><td id="loopBox">
+			</div>
+<!-- This is a div for the bottom row of small  Buttons     -->	
+			<div id = "loopBox">
+	
 <!--  "Start Loop" -->
 			        <button id="loopStart" class="AZ_All_Buttons_S" onclick="setLoopStart();" type="button"  style="font-size: 16px;padding: 0;" disabled>  </button>
-                    
 <!--  "END Loop" -->
                     <button id="loopEnd" class="AZ_All_Buttons_S" onclick="setLoopEnd();" type="button"  style="font-size: 16px; padding: 0;" disabled> </button>
-                    
 <!-- "RESET Loop"  -->
                     <button id="loopReset" class="AZ_All_Buttons_S" onclick="resetSelection();" type="button"  style="font-size: 16px;padding: 0;" disabled> </button>
-                    
 <!-- "PLAY LOOP"   -->                    
                     <button onclick="loopOnOff();" class="AZ_All_Buttons_S" id="loopOnOff" type="button"  style="font-size: 16px; disabled>" </button>
 
-			    </td></tr>
-			</table> 
-<!-- *** A Div currently unamed for the song chooser dropdown  -->
-			<div>	  
-<!--AZ now the dropdown list for the songs chooser           -->		    
-		    
-			        <div id="songs" class="styled-select"></div>
-
-			
-		  </div> 
+			  
+			</div> 
+<!--AZ now the div to hold dropdown list for the songs chooser. Note the class     -->		    
+			<div id="songs" class="styled-select"></div>
 <!-- ******Current END Div Master Tools -->		
-	</div>	
+		</div>	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-<!-- AZ temp putting wavecanvas in here  -->
-         <canvas id="waveCanvas"></canvas>
+<!--  ****END OF TOP HALF -->
 
+<!-- LOWER HALF FOR TRACKS  -->
+
+<!-- First an outer container called scroll -->
+		
 
 
 		<div id="scroll">
+<!-- 		Then the left side for the tracks  -->
     		<div id="trackControl">
-    			<table id="tracks">
-    				
-    			
-    			</table>
+    			<table id="tracks"></table>
     		</div>
+    		
+<!--     	and the right side for the wave	 -->
     		<div id="canvass">
     			<div style="position: relative;">
-    				<canvas id="myCanvas" width="602" height="400" style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
-    				<canvas id="frontCanvas"                       style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+    				<canvas id="myCanvas" ></canvas>
+    				<canvas id="frontCanvas"></canvas>
     			</div>
     		</div>
 		</div>
-	
-<!-- *****ENd Div Called "app"	 -->
+<!-- AZ temp putting wavecanvas in here  -->
+        <canvas id="waveCanvas"></canvas>	
+<!-- *****End Div Called "app"	 -->
 	</div>
         
 

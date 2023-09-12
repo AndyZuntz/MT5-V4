@@ -353,7 +353,7 @@ function loadSong(songName) {
         // resize canvas depending on number of samples
         resizeSampleCanvas(song.instruments.length);
 
-        // for eah instrument/track in the song
+        // for each instrument/track in the song
         song.instruments.forEach(function (instrument, trackNumber) {
             // Let's add a new track to the current song for this instrument
             currentSong.addTrack(instrument);
