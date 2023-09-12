@@ -1,18 +1,15 @@
-
-
 /* AZ The main background colors are in this area  */
 body {
-/* 	margin 10px; */
+	margin 10px;
     background: pink;
 /*     background: #3D4045; */
-     border: 1px solid blue;
+     border: 3px dashed blue;
 }
 
 #app {
     width: 100%;
-    margin: 0px;
+    margin: auto;
     background: red;
-    border: 1px solid white ;
 }
 
 #console {
@@ -24,19 +21,18 @@ body {
     text-align: center;
     color: white;
     background: blue;
-    border: 1px solid pink;
+    border: 3px solid pink;
     z-index: 10;
 }
 
 #waveCanvas {
     height: 150px;
-    background: green;
     white-space: nowrap;
     overflow: auto;
     overflow-x: hidden;
-    border: 1px solid pink;
+    border: 10px dashed pink;
 /*     AZ temp hide */
-}
+ visibility: hidden;}
 
 #messages {
     height: 160px;
@@ -49,27 +45,16 @@ body {
 /*     position: fixed; */
 /*     top: 0; */
 /*     AZ Changed Height to 300 */
-/* 
     height: 300px;
-    width: 100%;
- */
+    width: 75%;
     text-align: center;
     background: #3D4045;
-    border: 1px solid yellow;
-/*     z-index: 10; */
+    border: 10px dashed green;
+    z-index: 10;
 }
 
+#Large-Buttons
 
-#Large_Buttons{
-border: 1px solid blue;
-background: green;
-}
-
-#loopBox {
-/* got to call it this because the JS needs it */
-border: 1px solid green;
-background: pink
-}
 #volume {
     height: 42px;
 }
@@ -77,8 +62,18 @@ background: pink
 /* AZ this is the container for the songs dropdown list  */
 
 #songs {
-    border: 1px solid black;
-    background: orange;
+ display: flex;
+ align-items: center;
+/* 
+    text-align: left;
+    position: absolute;
+    top: 150px;
+    left : 150px;
+    width: 300px;
+    height: 50px;
+    background: #3D4045;
+ */
+    border: 10px solid pink;
 }
 
 #trackControl {
@@ -89,49 +84,41 @@ background: pink
 
 #tracks {
     width: 100%;
-/*   */   margin-top: -1px;
+    margin-top: -1px;
 }
 
 .trackBox {
     vertical-align: middle;
-    border: 1px solid blue;
+    border: 10px solid violet;
 }
 
 #canvass {
-/*     margin-left: 380px; */
-    border: 1px solid red;
+    margin-left: 380px;
+    border: 10px solid red;
 }
 
 #myCanvas {
-    background: pink;
-    margin: 0px;
+    background: #ffffff;
 }
 
 #scroll {
-	text-align: center;
-    background: purple;
-    border: 1px solid pink;
-
-/* 
-
     position: absolute;
 /* AZ this is the wave player area. Pushed it down to match #mastertool  */
-/* 
     top: 301px;
     width: 980px;
     background: #EEE;
- */
- */
 }
 
 /* This is the dropdown for the song chooser  */
 
 .styled-select select {
- border: 1px solid blue;
+ border: 3px dashed blue;
  */
 }
 
 /* AZ this where the Buttons are sized.  it affects them all */
+ /* Attempt to sort out buttons to match carl's icons 
+This should over-ride the bootstrap css */  
     
 /* ALL BUTTONS  - L for the bigger ones ( 1-3) and - S for the Loop ones (4-7) */
 
@@ -162,31 +149,37 @@ background: pink
       background: url(../img/CR_Play.png) no-repeat  ;  
        background-size: cover; 
 }
+
 /* PAUSE BUTTON */
 #bpause {  
     background: url(../img/CR_Pause.png) no-repeat  ;  
     background-size: cover;  
 }
+    
 /* STOP  BUTTON */
 #bstop {    
     background: url(../img/CR_Stop.png) no-repeat  ;  
     background-size: cover; 
 }
+
 /* LOOP START BUTTON */
 #loopStart {  
     background: url(../img/CR_Start_loop.png) no-repeat  ;   
     background-size: cover;   
 }
+
 /* LOOP END  BUTTON */
 #loopEnd {
     background: url(../img/CR_End_loop.png) no-repeat  ;  
     background-size: cover; 
    }
+
 /* RESET LOOP BUTTON  */
 #loopReset {  
     background: url(../img/CR_cancel_loop.png) no-repeat  ;  
     background-size: cover;    
 }
+
 /* PLAY LOOP  BUTTON */
 #loopOnOff {
     background: url(../img/CR_Play_loop.png) no-repeat  ; 
@@ -261,7 +254,9 @@ a[data-toggle=tab] {
 
 /***** for sliders *****/
 
-
+body {
+    margin-left: 3%;
+}
 
 .touch {
     width: 40%;
