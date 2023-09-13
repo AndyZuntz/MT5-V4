@@ -52,12 +52,12 @@ body {
     background: #3D4045;
 }
 
-#Large-Buttons{
-	margin:auto;
-	height: 40px;
-	background: WHITE;
-	text-align: CENTER;
-	border: 3px solid yellow;
+#Large_Buttons{
+	border: 3px solid red;
+}
+
+#loopBox{
+border: 3px solid yellow;
 }
 
 #volume {
