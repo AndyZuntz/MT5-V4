@@ -1,3 +1,8 @@
+*{
+border: 2px solid blue !important;
+}
+
+
 /* AZ The main background colors are in this area  */
 body {
 	margin 10px;
