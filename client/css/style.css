@@ -5,7 +5,6 @@
 
 /* AZ The main background colors are in this area  */
 body {
-	margin 10px;
     background: pink;
 /*     background: #3D4045; */
 }
@@ -53,11 +52,11 @@ body {
 }
 
 #Large_Buttons{
-	border: 3px solid red;
+	border: 1px solid red;
 }
 
 #loopBox{
-border: 3px solid yellow;
+border: 1px solid purple;
 }
 
 #volume {
@@ -67,6 +66,7 @@ border: 3px solid yellow;
 /* AZ this is the container for the songs dropdown list  */
 
 #songs {
+border: 1px solid yellow;
 
 }
 
@@ -78,7 +78,6 @@ border: 3px solid yellow;
 
 #tracks {
     width: 100%;
-    margin-top: -1px;
 }
 
 .trackBox {
@@ -104,8 +103,7 @@ border: 3px solid yellow;
 /* This is the dropdown for the song chooser  */
 
 .styled-select select {
-border: 3px solid blue;
-
+border: 1px solid blue;
 }
 
 /* AZ this where the Buttons are sized.  it affects them all */
@@ -236,7 +234,7 @@ a[data-toggle=tab] {
 
 .activated {
     color: green;
-    border: 3px solid green;
+    border: 1px solid green;
 }
 
 .volumeSlider {
