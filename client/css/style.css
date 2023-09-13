@@ -47,14 +47,15 @@ body {
 /*     position: fixed; */
 /*     top: 0; */
 /*     AZ Changed Height to 300 */
-    height: 300px;
-    width: 75%;
+    width: 100%;
     text-align: center;
     background: #3D4045;
-    z-index: 10;
 }
 
-#Large-Buttons
+#Large-Buttons{
+	margin:auto;
+	text-align: left;
+}
 
 #volume {
     height: 42px;
