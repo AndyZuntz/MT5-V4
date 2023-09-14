@@ -93,9 +93,10 @@ border: 1px solid yellow;
 }
 
 #scroll {
-    position: absolute;
+/*     position: absolute; */
 /* AZ this is the wave player area. Pushed it down to match #mastertool  */
-    top: 301px;
+/*     top: 301px; */
+    margin:auto;
     width: 980px;
     background: #EEE;
 }
