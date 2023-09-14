@@ -13,7 +13,6 @@ body {
     width: 100%;
     margin: auto;
     background: red;
-    	border: 10px solid green;
 }
 
 #console {
@@ -30,16 +29,12 @@ body {
 
 #waveCanvas {
     height: 150px;
-/* 
     white-space: nowrap;
     overflow: auto;
     overflow-x: hidden;
- */
-     background: yellow;
 /*     AZ temp hide */
  visibility: hidden;}
- 
- 
+
 #messages {
     height: 160px;
     white-space: nowrap;
@@ -57,11 +52,11 @@ body {
 }
 
 #Large_Buttons{
-	border: 2px solid red;
+	border: 1px solid red;
 }
 
 #loopBox{
-border: 2px solid white ;
+border: 1px solid purple;
 }
 
 #volume {
@@ -71,46 +66,38 @@ border: 2px solid white ;
 /* AZ this is the container for the songs dropdown list  */
 
 #songs {
-border: 2px solid yellow;
+border: 1px solid yellow;
 
 }
 
 #trackControl {
     float: left;
-    width: 33%;
-      height: 60%;
+    width: 378px;
     overflow: hidden;
-   background: orange;
-   border: 3px dashed white ;
 }
 
 #tracks {
     width: 100%;
-     border: 3px dashed blue ;
 }
 
 .trackBox {
     vertical-align: middle;
-        border: 3px dashed blue ;
 }
 
-
 #canvass {
-/*     margin-left: 380px; */
-    background: grey;
+    margin-left: 380px;
 }
 
 #myCanvas {
-/* this one holds the waveform  */
-    background: green;
-    width: 30%;
-/*     height: 30%; */
+    background: #2367ed;
 }
 
 #scroll {
+    position: absolute;
 /* AZ this is the wave player area. Pushed it down to match #mastertool  */
-    width: 100%;
-    background: purple;
+    top: 301px;
+    width: 980px;
+    background: #EEE;
 }
 
 /* This is the dropdown for the song chooser  */
