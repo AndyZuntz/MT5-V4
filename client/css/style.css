@@ -28,6 +28,7 @@ body {
 }
 
 #waveCanvas {
+/* for  the unused wave form  */
     height: 150px;
     white-space: nowrap;
     overflow: auto;
@@ -82,10 +83,12 @@ border: 1px solid yellow;
 
 .trackBox {
     vertical-align: middle;
+    border: 3px solid grey;
 }
 
 #canvass {
     margin-left: 380px;
+    border: 1px solid yellow;
 }
 
 #myCanvas {
@@ -97,8 +100,10 @@ border: 1px solid yellow;
 /* AZ this is the wave player area. Pushed it down to match #mastertool  */
 /*     top: 301px; */
     margin:auto;
+/* 
     width: 980px;
-    background: #EEE;
+ */
+    background: magenta;
 }
 
 /* This is the dropdown for the song chooser  */
