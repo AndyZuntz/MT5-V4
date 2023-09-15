@@ -237,7 +237,7 @@ function drawTrack(decodedBuffer, trackNumber) {
 
     var trackName = currentSong.tracks[trackNumber].name;
     //trackName = trackName.slice(trackName.lastIndexOf("/")+1, trackName.length-4);
-// AZ Change the colour of the waveform in the3 hex code below 
+// AZ Change the colour of the waveform in the hex code below 
     waveformDrawer.init(decodedBuffer, View.masterCanvas, '#ed9b82');
     var x = 0;
     var y = trackNumber * SAMPLE_HEIGHT;
@@ -722,19 +722,19 @@ function soloNosoloTrack(trackNumber) {
         // we were not in solo mode, let's go in solo mode
         currentTrack.solo = true;
         // Let's change the icon
-        s.innerHTML = "<img src='../img/noearphones.png' />";
+        s.innerHTML = "<img src='../img/NoSoloIcon.png' />";
     } else {
         // we were in solo mode, let's go to the "no solo" mode
         currentTrack.solo = false;
         // Let's change the icon
-        s.innerHTML = "<img src='../img/earphones.png' />";
+        s.innerHTML = "<img src='../img/SoloIcon.png' />";
     }
 
     // In all cases we remove the mute state of the curent track
     currentTrack.muted = false;
     $(m).removeClass("activated");
     // Let's change the icon
-    m.innerHTML = "<span class='glyphicon glyphicon-volume-up'></span>";
+    m.innerHTML = "<img src='../img/MuteIcon.png' />";
 
     // Adjust the volumes depending on all mute/solo states
     currentSong.setTrackVolumesDependingOnMuteSoloStatus();
@@ -752,8 +752,8 @@ function muteUnmuteTrack(trackNumber) {
     if (!currentTrack.muted) {
         // Track was not muted, let's mute it!
         currentTrack.muted = true;
-        // let's change the button's class
-        m.innerHTML = "<span class='glyphicon glyphicon-volume-off'></span>";
+        // let's change the button's icon(AZ)
+        m.innerHTML = "<img src='../img/MuteIcon.png' />";
     } else {
         // track was muted, let's unmute it!
         currentTrack.muted = false;
