@@ -73,7 +73,7 @@ border: 1px solid yellow;
 
 #trackControl {
     float: left;
-    width: 40%;
+    width: 378px;
     overflow: hidden;
 }
 
@@ -82,7 +82,7 @@ border: 1px solid yellow;
 }
 
 .trackBox {
-    vertical-align: right;
+    vertical-align: middle;
     border: 3px solid grey;
 }
 
@@ -184,23 +184,17 @@ This should over-ride the bootstrap css */
 
 /* AZ add a new class for the mute and solo  buttons on the track control - they have been assigned to the class but it did not exist */
 .mute {
-	height: 50px;
-    width: 50px;  
-    background: url(../img/MuteIcon.png) no-repeat  ; 
-    background-size: cover;  
-    background #989898;
-    border: 1px solid #000000;
-    border-radius: 5px;
+    height: 75px;
+    width: 75px;
+    margin-top: 8px;
+    margin right: 2px;
 }
 
 .solo {
-    height: 50px;
-    width: 50px;
-    background: url(../img/SoloIcon.png) no-repeat  ; 
-    background-size: cover;
-	background #989898;
-    border: 1px solid #000000;
-    border-radius: 5px;    
+    height: 75px;
+    width: 75px;
+    margin-top: 8px;
+     margin right: 2px;
 }
 
 #sound {
@@ -252,8 +246,6 @@ a[data-toggle=tab] {
 .volumeSlider {
     margin-left: 20px;
     width: 170px;
-    margin-right 15px;
-  
 }
 
 /***** for sliders *****/
@@ -263,7 +255,6 @@ a[data-toggle=tab] {
     width: 40%;
 }
 /* This controls the style of the volume slider on each track */
-/* NOt yet sorted out custom or moz...only webkit */
 .custom {
     width: 45%;
     -webkit-appearance: none !important;
@@ -283,14 +274,13 @@ a[data-toggle=tab] {
 .custom::-webkit-slider-thumb {
     -webkit-appearance: none !important;
     background: #AAA;
-    /*     AZ Change slider vol on track Button colours and size shape/radius*/
+    /*     AZ Change Vol Button colours and size shape/radius*/
     
-    background #989898;
-    border: 1px solid #000000;
-    border-radius: 5px;
+    background-image: linear-gradient(to bottom,  #3D4045, #3D4045 );
+    border: 1px solid #999;
     height: 30px;
     width: 30px;
-
+    border-radius: 5px;
 }
 
 .custom::-moz-range-thumb {
