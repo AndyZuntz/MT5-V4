@@ -83,7 +83,8 @@ border: 1px solid yellow;
 
 .trackBox {
     vertical-align: middle;
-    border: 3px solid grey;
+    border-top: 1px solid #3D4045 !important;
+    border-bottom: 1px solid #3D4045 !important;
 }
 
 #canvass {
@@ -272,7 +273,7 @@ a[data-toggle=tab] {
     border-radius: 5px;
     -webkit-box-shadow: inset 0 0 5px #333;
 /*     AZ Change Volume Control Slider colours  */
-    background-image: linear-gradient(to right, black 70%, white);
+    background-color: #989898;
 /*     transition: background 450ms; */
 }
 
@@ -283,7 +284,7 @@ a[data-toggle=tab] {
     background: #AAA;
     /*     AZ Change Vol Button colours and size shape/radius*/
     
-    background-image: linear-gradient(to bottom,  #3D4045, #3D4045 );
+    background-color: #989898;
     border: 1px solid #999;
     height: 30px;
     width: 30px;
