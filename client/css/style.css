@@ -186,15 +186,11 @@ This should over-ride the bootstrap css */
 .mute {
     height: 75px;
     width: 75px;
-    margin-top: 8px;
-    margin right: 2px;
 }
 
 .solo {
     height: 75px;
     width: 75px;
-    margin-top: 8px;
-     margin right: 2px;
 }
 
 #sound {
