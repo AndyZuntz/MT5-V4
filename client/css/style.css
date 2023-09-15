@@ -182,15 +182,26 @@ This should over-ride the bootstrap css */
     background-size: cover;     
 }
 
+/* treying to override bootstap buttons  */
+
+
+
 /* AZ add a new class for the mute and solo  buttons on the track control - they have been assigned to the class but it did not exist */
 .mute {
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
+    border-radius: 6px !important;
+    background-color: #989898 !important;
+    border: 1px solid #3D4045 !important;
+  
 }
 
 .solo {
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
+    border-radius: 6px !important;
+    background-color: #989898 !important;
+    border: 1px solid #3D4045 !important;
 }
 
 #sound {
