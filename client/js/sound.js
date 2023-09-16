@@ -688,7 +688,7 @@ function pauseAllTracks() {
 function setMasterVolume(val) {
     if (currentSong !== undefined) {
         // If we are here, then we need to reset the mute all button
-        document.querySelector("#bsound").innerHTML = '<span class="glyphicon glyphicon-volume-up"></span>';
+        document.querySelector("#bsound").innerHTML = "<img src='../img/MuteIcon.png' />";
         var fraction;
 
         // set its volume to the current value of the master volume knob
@@ -722,19 +722,19 @@ function soloNosoloTrack(trackNumber) {
         // we were not in solo mode, let's go in solo mode
         currentTrack.solo = true;
         // Let's change the icon
-        s.innerHTML = "<img src='../img/noearphones.png' />";
+        s.innerHTML = "<img src='../img/NoSoloIcon.png' />";
     } else {
         // we were in solo mode, let's go to the "no solo" mode
         currentTrack.solo = false;
         // Let's change the icon
-        s.innerHTML = "<img src='../img/earphones.png' />";
+        s.innerHTML = "<img src='../img/SoloIcon.png' />";
     }
 
     // In all cases we remove the mute state of the curent track
     currentTrack.muted = false;
     $(m).removeClass("activated");
     // Let's change the icon
-    m.innerHTML = "<span class='glyphicon glyphicon-volume-up'></span>";
+    m.innerHTML = "<img src='../img/MuteIcon.png' />";
 
     // Adjust the volumes depending on all mute/solo states
     currentSong.setTrackVolumesDependingOnMuteSoloStatus();
@@ -753,18 +753,18 @@ function muteUnmuteTrack(trackNumber) {
         // Track was not muted, let's mute it!
         currentTrack.muted = true;
         // let's change the button's class
-        m.innerHTML = "<span class='glyphicon glyphicon-volume-off'></span>";
+        m.innerHTML = "<img src='../img/NoMuteIcon.png' />";
     } else {
         // track was muted, let's unmute it!
         currentTrack.muted = false;
-        m.innerHTML = "<span class='glyphicon glyphicon-volume-up'></span>";
+        m.innerHTML = "<img src='../img/MuteIcon.png' />";
     }
 
     // In all cases we must put the track on "no solo" mode
     currentTrack.solo = false;
     $(s).removeClass("activated");
     // Let's change the icon
-    s.innerHTML = "<img src='../img/earphones.png' />";
+    s.innerHTML = "<img src='../img/SoloIcon.png' />";
 
     // adjust track volumes dependinf on all mute/solo states
     currentSong.setTrackVolumesDependingOnMuteSoloStatus();
@@ -778,9 +778,9 @@ function masterMuteUnmute(btn) {
     $(btn).toggleClass("activated");
 
     if (currentSong.muted) {
-        btn.innerHTML = '<span class="glyphicon glyphicon-volume-off"></span>';
+        btn.innerHTML = "<img src='../img/NoMuteIcon.png' />";
     } else {
-        btn.innerHTML = '<span class="glyphicon glyphicon-volume-up"></span>';
+        btn.innerHTML = "<img src='../img/MuteIcon.png' />";
     }
 }
 
