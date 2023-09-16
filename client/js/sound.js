@@ -757,14 +757,14 @@ function muteUnmuteTrack(trackNumber) {
     } else {
         // track was muted, let's unmute it!
         currentTrack.muted = false;
-        m.innerHTML = "<span class='glyphicon glyphicon-volume-up'></span>";
+        m.innerHTML = "<img src='../img/NoMuteIcon.png' />";
     }
 
     // In all cases we must put the track on "no solo" mode
     currentTrack.solo = false;
     $(s).removeClass("activated");
     // Let's change the icon
-    s.innerHTML = "<img src='../img/earphones.png' />";
+    s.innerHTML = "<img src='../img/SoloIcon.png' />";
 
     // adjust track volumes dependinf on all mute/solo states
     currentSong.setTrackVolumesDependingOnMuteSoloStatus();
@@ -778,9 +778,9 @@ function masterMuteUnmute(btn) {
     $(btn).toggleClass("activated");
 
     if (currentSong.muted) {
-        btn.innerHTML = '<span class="glyphicon glyphicon-volume-off"></span>';
+        btn.innerHTML = "<img src='../img/NoMuteIcon.png' />";
     } else {
-        btn.innerHTML = '<span class="glyphicon glyphicon-volume-up"></span>';
+        btn.innerHTML = "<img src='../img/MuteIcon.png' />";
     }
 }
 
