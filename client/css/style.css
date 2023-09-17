@@ -261,7 +261,7 @@ a[data-toggle=tab] {
     float: left;
     margin-right: 25px;
 }
-
+/* AZ look into this later */
 .activated {
     color: green;
     border: 1px solid green;
