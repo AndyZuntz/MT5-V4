@@ -1,6 +1,4 @@
-*{
-/* border: 2px solid blue !important; */
-}
+
 
 
 /* AZ The main background colors are in this area  */
@@ -53,12 +51,10 @@ body {
 }
 
 #Large_Buttons{
-	border: 1px solid red;
-}
+	border: 1px solid red;}
 
 #loopBox{
-border: 1px solid purple;
-}
+border: 1px solid purple;}
 
 #volume {
     height: 42px;
@@ -68,7 +64,6 @@ border: 1px solid purple;
 
 #songs {
 border: 1px solid yellow;
-
 }
 
 #trackControl {
@@ -89,11 +84,12 @@ border: 1px solid yellow;
 
 #canvass {
     margin-left: 380px;
+
     border: 1px solid yellow;
 }
 
 #myCanvas {
-    background: #2367ed;
+    background: blue;
 }
 
 #scroll {
@@ -146,6 +142,26 @@ This should over-ride the bootstrap css */
       background: url(../img/CR_Play.png) no-repeat  ;  
        background-size: cover; 
 }
+
+#bplay:disabled {
+      background: url(../img/CR_Play.png) no-repeat  ;  
+      background-size: cover;
+      border: 3px solid red !important; 		
+}
+
+#bplay:enabled {
+      background: url(../img/CR_Play.png) no-repeat  ;  
+      background-size: cover;
+      border: 3px solid blue !important; 		
+}
+
+/* AZ Testing enabled/disable/active functionality */
+#bplay:active {
+      background: url(../img/CR_Play.png) no-repeat  ;  
+      background-size: cover; 
+		transform: scale(0.95);
+}
+
 
 /* PAUSE BUTTON */
 #bpause {  
