@@ -3,14 +3,16 @@
 
 /* AZ The main background colors are in this area  */
 body {
-    background: pink;
-/*     background: #3D4045; */
+/*     background: pink; */
+    background: #3D4045;
 }
 
 #app {
     width: 100%;
     margin: auto;
+/* 
     background: red;
+ */
 }
 
 #console {
@@ -50,11 +52,16 @@ body {
     background: #3D4045;
 }
 
+/* The divc for the  toprow of buttons */
 #Large_Buttons{
-	border: 1px solid red;}
+	border: 0px solid red;
+	margin-top: 15px;
+
+	}
 
 #loopBox{
-border: 1px solid purple;}
+	margin-top: 15px;
+	border: 0px solid purple;}
 
 #volume {
     height: 42px;
@@ -63,7 +70,7 @@ border: 1px solid purple;}
 /* AZ this is the container for the songs dropdown list  */
 
 #songs {
-border: 1px solid yellow;
+/* border: 1px solid yellow; */
 }
 
 #trackControl {
@@ -78,32 +85,35 @@ border: 1px solid yellow;
 
 .trackBox {
     vertical-align: middle;
-    border-top: 1px solid #3D4045 !important;
-    border-bottom: 1px solid #3D4045 !important;
-}
+    border: 2px solid #989898 !important;
+ }
 
 #canvass {
     margin-left: 380px;
-    border: 5px solid yellow;
+    border: 0px solid yellow;
 }
 
 #myCanvas {
-    background: pink;
+    background: #3D4045;
 }
 
 #scroll {
-	margin: auto;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right:auto;
 /*     position: absolute; */
 /* AZ this is the wave player area. Pushed it down to match #mastertool  */
 /*     top: 301px; */
     width: 980px;
-    background: #EEE;
+    background: #3D4045;
 }
 
 /* This is the dropdown for the song chooser  */
 
 .styled-select select {
-border: 1px solid blue;
+	margin-top: 15px;
+/* border: 1px solid blue; */
+
 }
 
 /* AZ this where the Buttons are sized.  it affects them all */
@@ -117,8 +127,8 @@ This should over-ride the bootstrap css */
     width: 100px;  
     background-size: 10%; 
     background-color : #989898 !important;
-    border-width : 0px !important;
-    border-color: grey !important;
+    border-width : 1px !important;
+    border-color: white !important;
     border-style: solid;
     border-radius: 5px;
 }   
@@ -128,42 +138,50 @@ This should over-ride the bootstrap css */
     width: 50px;  
     background-size: 10%; 
     background-color : #989898 !important;
-    border-width : 0px !important;
-    border-color: grey !important;
+    border-width : 1px !important;
+    border-color: white !important;
     border-style: solid;
     border-radius: 5px;
 }   
+
+/* Amazingly this works on all Buttons 	and shrinks them when pressed */
+button:active { 
+	transform: scale(0.96);
+
+}
+
     
 /* PLAY BUTTON */
 #bplay {
       background: url(../img/CR_Play.png) no-repeat  ;  
-       background-size: cover; 
+      background-size: cover; 
 }
 
 #bplay:disabled {
       background: url(../img/CR_Play.png) no-repeat  ;  
       background-size: cover;
-      border: 3px solid red !important; 		
+/*       border: 3px solid red !important; 		 */
 }
 
 #bplay:enabled {
       background: url(../img/CR_Play.png) no-repeat  ;  
       background-size: cover;
-      border: 3px solid blue !important; 		
+/*       border: 3px solid blue !important; 		 */
 }
 
 /* AZ Testing enabled/disable/active functionality */
 #bplay:active {
       background: url(../img/CR_Play.png) no-repeat  ;  
       background-size: cover; 
-		transform: scale(0.95);
+	
 }
 
 
 /* PAUSE BUTTON */
 #bpause {  
     background: url(../img/CR_Pause.png) no-repeat  ;  
-    background-size: cover;  
+    background-size: cover;
+      
 }
     
 /* STOP  BUTTON */
@@ -206,7 +224,7 @@ This should over-ride the bootstrap css */
     width: 50px;
     border-radius: 6px !important;
     background-color: #989898 !important;
-    border: 1px solid #3D4045 !important;
+    border: 1px solid white  !important;
   
 }
 
@@ -215,7 +233,7 @@ This should over-ride the bootstrap css */
     width: 50px;
     border-radius: 6px !important;
     background-color: #989898 !important;
-    border: 1px solid #3D4045 !important;
+    border: 1px solid white !important;
 }
 
 #sound {
