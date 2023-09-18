@@ -89,19 +89,15 @@ border: 1px solid yellow;
 
 #myCanvas {
     background: pink;
-    width: 600px;
-    height:600px;
 }
 
 #scroll {
+	margin: auto;
 /*     position: absolute; */
 /* AZ this is the wave player area. Pushed it down to match #mastertool  */
 /*     top: 301px; */
-    margin:auto;
-/* 
     width: 980px;
- */
-    background: brown;
+    background: #EEE;
 }
 
 /* This is the dropdown for the song chooser  */
