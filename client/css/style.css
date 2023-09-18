@@ -86,11 +86,16 @@ body {
 .trackBox {
     vertical-align: middle;
     border: 2px solid #989898 !important;
+    font-family:Arial; 
+    color:White; 
+    font-size: 16px;
+    padding-right: 25px;
  }
 
 #canvass {
-    margin-left: 380px;
-    border: 0px solid yellow;
+    margin-left: 375px;
+    margin-top 3px;
+/*     border: 0px solid yellow; */
 }
 
 #myCanvas {
@@ -113,7 +118,6 @@ body {
 .styled-select select {
 	margin-top: 15px;
 /* border: 1px solid blue; */
-
 }
 
 /* AZ this where the Buttons are sized.  it affects them all */
@@ -147,7 +151,6 @@ This should over-ride the bootstrap css */
 /* Amazingly this works on all Buttons 	and shrinks them when pressed */
 button:active { 
 	transform: scale(0.96);
-
 }
 
     
