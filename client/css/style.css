@@ -85,7 +85,7 @@ body {
 
 .trackBox {
     vertical-align: middle;
-    border: 2px solid #989898 !important;
+    border: 2px solid #d1d3d4 !important;
     font-family:Arial; 
     color:White; 
     font-size: 16px;
@@ -100,6 +100,7 @@ body {
 
 #myCanvas {
     background: #3D4045;
+
 }
 
 #scroll {

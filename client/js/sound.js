@@ -26,7 +26,7 @@ var selectionForLoop = {
 
 // Sample size in pixels
 // AZ Changed to 99 to match button sizes 
-var SAMPLE_HEIGHT = 99;
+var SAMPLE_HEIGHT = 101;
 
 // Useful for memorizing when we paused the song
 var lastTime = 0;
@@ -248,7 +248,7 @@ function drawTrack(decodedBuffer, trackNumber) {
     View.masterCanvasContext.strokeStyle = "white";
     View.masterCanvasContext.strokeRect(x, y, window.View.masterCanvas.width, SAMPLE_HEIGHT);
 
-    View.masterCanvasContext.font = '14pt Arial';
+    View.masterCanvasContext.font = '10pt Arial';
     View.masterCanvasContext.fillStyle = 'white';
     View.masterCanvasContext.fillText(trackName, x + 10, y + 20);
 }
