@@ -191,9 +191,12 @@ button:active {
     background-size: cover; 
 }
 
+/* for some reason the Light buttons are not appearoing on RENDER>  TEMPO FIX TO PUT IN THE DARK oNES  */
+
+
 /* LOOP START BUTTON */
 #loopStart {  
-    background: url(../img/CR_Start_Loop.png) no-repeat  ;   
+    background: url(../img/CR_Start_Loop_Dark.png) no-repeat  ;   
     background-size: cover;   
 }
 
@@ -205,7 +208,7 @@ button:active {
 
 /* LOOP END  BUTTON */
 #loopEnd {
-    background: url(../img/CR_End_Loop.png) no-repeat  ;  
+    background: url(../img/CR_End_Loop_Dark.png) no-repeat  ;  
     background-size: cover; 
    }
 
@@ -216,7 +219,7 @@ button:active {
 
 /* RESET LOOP BUTTON  */
 #loopReset {  
-    background: url(../img/CR_Cancel_Loop.png) no-repeat  ;  
+    background: url(../img/CR_Cancel_Loop_Dark.png) no-repeat  ;  
     background-size: cover;    
 }
 
@@ -227,7 +230,7 @@ button:active {
 
 /* PLAY LOOP  BUTTON */
 #loopOnOff {
-    background: url(../img/CR_Play_Loop.png) no-repeat  ; 
+    background: url(../img/CR_Play_Loop_Dark.png) no-repeat  ; 
     background-size: cover;     
 }
 
