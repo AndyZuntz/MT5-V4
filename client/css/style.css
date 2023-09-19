@@ -162,31 +162,23 @@ button:active {
 }
 
 #bplay:disabled {
-      background: url(../img/CR_Play.png) no-repeat  ;  
+      background: url(../img/CR_Play_Dark.png) no-repeat  ;  
       background-size: cover;
-/*       border: 3px solid red !important; 		 */
-}
-
-#bplay:enabled {
-      background: url(../img/CR_Play.png) no-repeat  ;  
-      background-size: cover;
-/*       border: 3px solid blue !important; 		 */
-}
-
-/* AZ Testing enabled/disable/active functionality */
-#bplay:active {
-      background: url(../img/CR_Play.png) no-repeat  ;  
-      background-size: cover; 
-	
 }
 
 
 /* PAUSE BUTTON */
 #bpause {  
     background: url(../img/CR_Pause.png) no-repeat  ;  
-    background-size: cover;
-      
+    background-size: cover;      
 }
+    
+#bpause:disabled {  
+    background: url(../img/CR_Pause_Dark.png) no-repeat  ;  
+    background-size: cover;      
+}
+    
+        
     
 /* STOP  BUTTON */
 #bstop {    
@@ -194,34 +186,61 @@ button:active {
     background-size: cover; 
 }
 
+#bstop:disabled {    
+    background: url(../img/CR_Stop_Dark.png) no-repeat  ;  
+    background-size: cover; 
+}
+
 /* LOOP START BUTTON */
 #loopStart {  
-    background: url(../img/CR_Start_loop.png) no-repeat  ;   
+    background: url(../img/CR_Start_Loop.png) no-repeat  ;   
     background-size: cover;   
 }
 
+#loopStart:disabled {  
+    background: url(../img/CR_Start_Loop_Dark.png) no-repeat  ;   
+    background-size: cover;   
+}
+
+
 /* LOOP END  BUTTON */
 #loopEnd {
-    background: url(../img/CR_End_loop.png) no-repeat  ;  
+    background: url(../img/CR_End_Loop.png) no-repeat  ;  
+    background-size: cover; 
+   }
+
+#loopEnd:disabled {
+    background: url(../img/CR_End_Loop_Dark.png) no-repeat  ;  
     background-size: cover; 
    }
 
 /* RESET LOOP BUTTON  */
 #loopReset {  
-    background: url(../img/CR_cancel_loop.png) no-repeat  ;  
+    background: url(../img/CR_Cancel_Loop.png) no-repeat  ;  
+    background-size: cover;    
+}
+
+#loopReset:disabled {  
+    background: url(../img/CR_Cancel_Loop_Dark.png) no-repeat  ;  
     background-size: cover;    
 }
 
 /* PLAY LOOP  BUTTON */
 #loopOnOff {
-    background: url(../img/CR_Play_loop.png) no-repeat  ; 
+    background: url(../img/CR_Play_Loop.png) no-repeat  ; 
     background-size: cover;     
 }
 
-/* treying to override bootstap buttons  */
+#loopOnOff:disabled{
+    background: url(../img/CR_Play_Loop_Dark.png) no-repeat  ; 
+    background-size: cover;     
+}
 
 
 
+
+
+/* Overriding  bootstap buttons  */
 /* AZ add a new class for the mute and solo  buttons on the track control - they have been assigned to the class but it did not exist */
 .mute {
     height: 50px;
