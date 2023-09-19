@@ -15,6 +15,7 @@ var PORT = process.env.PORT,
 TRACKS_PATH = './client/multitrack/',
 addrIP = process.env.IP;
 
+// actuyally no longer needed on my mac  seems to work anyways*****
 // AZ to run on local server use
 // change port and IP, for example, use something like:
 // Config for local version 
