@@ -1,13 +1,18 @@
+
+
+
 /* AZ The main background colors are in this area  */
 body {
-    margin: 0 3%;
+/*     background: pink; */
     background: #3D4045;
 }
 
 #app {
-    width: 1080px;
+    width: 100%;
     margin: auto;
-    background: blue;
+/* 
+    background: red;
+ */
 }
 
 #console {
@@ -19,16 +24,17 @@ body {
     text-align: center;
     color: white;
     background: blue;
-    border: 1px solid grey;
     z-index: 10;
 }
 
 #waveCanvas {
+/* for  the unused wave form  */
     height: 150px;
     white-space: nowrap;
     overflow: auto;
     overflow-x: hidden;
-}
+/*     AZ temp hide */
+ visibility: hidden;}
 
 #messages {
     height: 160px;
@@ -38,31 +44,33 @@ body {
 }
 
 #masterTools {
-    position: fixed;
-    top: 0;
+/*     position: fixed; */
+/*     top: 0; */
 /*     AZ Changed Height to 300 */
-    height: 300px;
     width: 100%;
     text-align: center;
     background: #3D4045;
-/*     border: 1px solid grey; */
-    z-index: 10;
 }
+
+/* The divc for the  toprow of buttons */
+#Large_Buttons{
+	border: 0px solid red;
+	margin-top: 15px;
+
+	}
+
+#loopBox{
+	margin-top: 15px;
+	border: 0px solid purple;}
 
 #volume {
     height: 42px;
 }
 
-/* AZ this is the contyainer for the songs dropdown list  */
+/* AZ this is the container for the songs dropdown list  */
 
 #songs {
-    text-align: left;
-    position: absolute;
-    top: 150px;
-    left : 150px;
-    width: 300px;
-    height: 50px;
-    background: #3D4045;
+/* border: 1px solid yellow; */
 }
 
 #trackControl {
@@ -73,58 +81,46 @@ body {
 
 #tracks {
     width: 100%;
-    margin-top: -1px;
 }
 
 .trackBox {
     vertical-align: middle;
-    border: 1px solid grey;
-}
+    border: 2px solid #d1d3d4 !important;
+    font-family:Arial; 
+    color:White; 
+    font-size: 16px;
+    padding-right: 25px;
+ }
 
 #canvass {
-    margin-left: 380px;
+    margin-left: 375px;
+    margin-top 3px;
+/*     border: 0px solid yellow; */
 }
 
 #myCanvas {
     background: #3D4045;
+
 }
 
 #scroll {
-    position: absolute;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right:auto;
+/*     position: absolute; */
 /* AZ this is the wave player area. Pushed it down to match #mastertool  */
-    top: 301px;
+/*     top: 301px; */
     width: 980px;
-    background: #EEE;
+    background: #3D4045;
 }
 
 /* This is the dropdown for the song chooser  */
-/* AZ cutting out this one for now 
+
 .styled-select select {
-    background: #ddd;
-    background: transparent;
-    width: 240px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    font-size: 18px;
-    line-height: 1.5;
-    border: 0;
-    border-radius: 0;
-    height: 30px;
-    -webkit-appearance: none;
- */
+	margin-top: 15px;
+/* border: 1px solid blue; */
 }
-/* AZ this is the songlist dropdown.  I have moved it down and centred  */
-.styled-select select {
-    width: 100px;
-    height: 30px;
-    margin-top:12px;
-    margin-left:150px !important;
-    overflow: hidden; 
-    font-size: 28px;
-      -webkit-appearance: none;   
-    background: url(../img/down_arrow_select.jpg) no-repeat right #ddd;
-/*     border: 1px solid #ccc; */
-}
+
 /* AZ this where the Buttons are sized.  it affects them all */
  /* Attempt to sort out buttons to match carl's icons 
 This should over-ride the bootstrap css */  
@@ -136,8 +132,8 @@ This should over-ride the bootstrap css */
     width: 100px;  
     background-size: 10%; 
     background-color : #989898 !important;
-    border-width : 0px !important;
-    border-color: grey !important;
+    border-width : 1px !important;
+    border-color: white !important;
     border-style: solid;
     border-radius: 5px;
 }   
@@ -147,23 +143,42 @@ This should over-ride the bootstrap css */
     width: 50px;  
     background-size: 10%; 
     background-color : #989898 !important;
-    border-width : 0px !important;
-    border-color: grey !important;
+    border-width : 1px !important;
+    border-color: white !important;
     border-style: solid;
     border-radius: 5px;
 }   
+
+/* Amazingly this works on all Buttons 	and shrinks them when pressed */
+button:active { 
+	transform: scale(0.96);
+}
+
     
 /* PLAY BUTTON */
 #bplay {
       background: url(../img/CR_Play.png) no-repeat  ;  
-       background-size: cover; 
+      background-size: cover; 
 }
+
+#bplay:disabled {
+      background: url(../img/CR_Play_Dark.png) no-repeat  ;  
+      background-size: cover;
+}
+
 
 /* PAUSE BUTTON */
 #bpause {  
     background: url(../img/CR_Pause.png) no-repeat  ;  
-    background-size: cover;  
+    background-size: cover;      
 }
+    
+#bpause:disabled {  
+    background: url(../img/CR_Pause_Dark.png) no-repeat  ;  
+    background-size: cover;      
+}
+    
+        
     
 /* STOP  BUTTON */
 #bstop {    
@@ -171,43 +186,80 @@ This should over-ride the bootstrap css */
     background-size: cover; 
 }
 
+#bstop:disabled {    
+    background: url(../img/CR_Stop_Dark.png) no-repeat  ;  
+    background-size: cover; 
+}
+
+/* for some reason the Light buttons are not appearoing on RENDER>  TEMPO FIX TO PUT IN THE DARK oNES  */
+
+
 /* LOOP START BUTTON */
 #loopStart {  
-    background: url(../img/CR_Start_loop.png) no-repeat  ;   
+    background: url(../img/CR_Start_Loop_Dark.png) no-repeat  ;   
     background-size: cover;   
 }
 
+#loopStart:disabled {  
+    background: url(../img/CR_Start_Loop_Dark.png) no-repeat  ;   
+    background-size: cover;   
+}
+
+
 /* LOOP END  BUTTON */
 #loopEnd {
-    background: url(../img/CR_End_loop.png) no-repeat  ;  
+    background: url(../img/CR_End_Loop_Dark.png) no-repeat  ;  
+    background-size: cover; 
+   }
+
+#loopEnd:disabled {
+    background: url(../img/CR_End_Loop_Dark.png) no-repeat  ;  
     background-size: cover; 
    }
 
 /* RESET LOOP BUTTON  */
 #loopReset {  
-    background: url(../img/CR_cancel_loop.png) no-repeat  ;  
+    background: url(../img/CR_Cancel_Loop_Dark.png) no-repeat  ;  
+    background-size: cover;    
+}
+
+#loopReset:disabled {  
+    background: url(../img/CR_Cancel_Loop_Dark.png) no-repeat  ;  
     background-size: cover;    
 }
 
 /* PLAY LOOP  BUTTON */
 #loopOnOff {
-    background: url(../img/CR_Play_loop.png) no-repeat  ; 
+    background: url(../img/CR_Play_Loop_Dark.png) no-repeat  ; 
     background-size: cover;     
 }
 
+#loopOnOff:disabled{
+    background: url(../img/CR_Play_Loop_Dark.png) no-repeat  ; 
+    background-size: cover;     
+}
+
+
+
+
+
+/* Overriding  bootstap buttons  */
 /* AZ add a new class for the mute and solo  buttons on the track control - they have been assigned to the class but it did not exist */
 .mute {
-    height: 75px;
-    width: 75px;
-    margin-top: 8px;
-    margin right: 2px;
+    height: 50px;
+    width: 50px;
+    border-radius: 6px !important;
+    background-color: #989898 !important;
+    border: 1px solid white  !important;
+  
 }
 
 .solo {
-    height: 75px;
-    width: 75px;
-    margin-top: 8px;
-     margin right: 2px;
+    height: 50px;
+    width: 50px;
+    border-radius: 6px !important;
+    background-color: #989898 !important;
+    border: 1px solid white !important;
 }
 
 #sound {
@@ -250,10 +302,10 @@ a[data-toggle=tab] {
     float: left;
     margin-right: 25px;
 }
-
+/* AZ look into this later */
 .activated {
     color: green;
-    border: 3px solid green;
+    border: 1px solid green;
 }
 
 .volumeSlider {
@@ -263,9 +315,6 @@ a[data-toggle=tab] {
 
 /***** for sliders *****/
 
-body {
-    margin-left: 3%;
-}
 
 .touch {
     width: 40%;
@@ -281,7 +330,7 @@ body {
     border-radius: 5px;
     -webkit-box-shadow: inset 0 0 5px #333;
 /*     AZ Change Volume Control Slider colours  */
-    background-image: linear-gradient(to right, black 70%, white);
+    background-color: #989898;
 /*     transition: background 450ms; */
 }
 
@@ -292,7 +341,7 @@ body {
     background: #AAA;
     /*     AZ Change Vol Button colours and size shape/radius*/
     
-    background-image: linear-gradient(to bottom,  #3D4045, #3D4045 );
+    background-color: #989898;
     border: 1px solid #999;
     height: 30px;
     width: 30px;

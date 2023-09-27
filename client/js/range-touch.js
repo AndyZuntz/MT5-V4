@@ -12,9 +12,9 @@ function addRangeListeners() {
   $('body').on("input", 'input[type="range"]', function () {
     var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min')) * 100;
     console.log("val = " + val);
-// AZ Changed The Volume Slider Colour this to Carls colour & adjusted gradient point
+// AZ Changed The Volume Slider Colour this to be fixed at 989898 (Carl's Gray)
     val2 = val*.5;
-    var cssProp = 'linear-gradient(to right  , black ' + val2 + '%, white)';
+    var cssProp = 'linear-gradient(to right  , #989898 ' + val2 + '%, #989898)';
     console.log(cssProp);
 
     $(this).css('background-image', cssProp)
